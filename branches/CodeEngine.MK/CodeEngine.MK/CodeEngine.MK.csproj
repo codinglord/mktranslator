@@ -59,6 +59,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\AppDBDataSet.cs">
+      <DependentUpon>AppDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Data\AppDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -70,6 +73,9 @@
     <Compile Include="FormPortal.Designer.cs">
       <DependentUpon>FormPortal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\LanguageManager.cs" />
+    <Compile Include="Models\LanguageMapper.cs" />
+    <Compile Include="Models\SysViewer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormPortal.resx">
@@ -80,9 +86,18 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainInformation.resx">
+      <DependentUpon>MainInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainInformation.Designer.cs">
+      <DependentUpon>MainInformation.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -105,8 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
   <ProjectExtensions>
