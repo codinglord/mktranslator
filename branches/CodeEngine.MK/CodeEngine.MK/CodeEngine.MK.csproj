@@ -86,7 +86,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\LanguageBoard.resx">
+    <EmbeddedResource Include="Views\Shares\LanguageBoard.resx">
       <DependentUpon>LanguageBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainInformation.resx">
@@ -144,10 +144,10 @@
     <Compile Include="Views\KAll.Designer.cs">
       <DependentUpon>KAll.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\LanguageBoard.cs">
+    <Compile Include="Views\Shares\LanguageBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\LanguageBoard.Designer.cs">
+    <Compile Include="Views\Shares\LanguageBoard.Designer.cs">
       <DependentUpon>LanguageBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MainInformation.cs">

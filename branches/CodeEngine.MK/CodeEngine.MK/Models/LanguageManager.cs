@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using A1 = CodeEngine.MK.Data.AppDBDataSet;
 using CodeEngine.MK.Data.AppDBDataSetTableAdapters;
 
 namespace CodeEngine.MK.Models
@@ -10,31 +11,29 @@ namespace CodeEngine.MK.Models
     static class LanguageManager
     {
 
-        private static DictionaryDetailTableAdapter DictionaryDetail { get; set; }
+        private static DataDictionaryTableAdapter _Adapter { get; set; }
 
         static LanguageManager()
         {
-            LanguageManager.DictionaryDetail = new DictionaryDetailTableAdapter();
+            LanguageManager._Adapter = new DataDictionaryTableAdapter();
         }
 
         public static void LoadText(List<LanguageMapper> mappers)
         {
-            CodeEngine.MK.Data.AppDBDataSet.DictionaryDetailDataTable tbl = DictionaryDetail.GetData();
-            foreach (LanguageMapper i in mappers)
+            CodeEngine.MK.Data.AppDBDataSet.DataDictionaryDataTable tbl = _Adapter.GetData();
+            var rows = tbl.Where(f => mappers.Select(k => k.Key).ToArray().Contains(f.Key));
+            foreach (var i in mappers)
             {
-                var rows = tbl.Where(f => {
-                    string fKey = f["Key"].ToString();
-                    string fLanguage = f["Language"].ToString();
-                    return fKey == i.Key && fLanguage == i.Language;
-                });
-                foreach (var j in rows)
-                {
-                    i.Ctrl.Text = j["Value"].ToString();
-                }
-            }
+                i.Ctrl.Text = rows.First(f => f.Key == i.Key)[i.Language].ToString();
+            }            
         }
 
-
+        public static A1.DataDictionaryRow[] GetTextByGroup(string tag, string language)
+        {
+            CodeEngine.MK.Data.AppDBDataSet.DataDictionaryDataTable tbl = _Adapter.GetData();
+            var rows = tbl.Where(f => f.Tags.Split(',').Contains(tag));
+            return rows.ToArray();
+        }
 
     }
 }
