@@ -67,10 +67,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FormPortal.cs">
+    <Compile Include="Views\FormPortal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPortal.Designer.cs">
+    <Compile Include="Views\FormPortal.Designer.cs">
       <DependentUpon>FormPortal.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\LanguageManager.cs" />
@@ -78,7 +78,7 @@
     <Compile Include="Models\SysViewer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormPortal.resx">
+    <EmbeddedResource Include="Views\FormPortal.resx">
       <DependentUpon>FormPortal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
