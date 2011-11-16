@@ -2,5 +2,11 @@
     
     
     public partial class AppDBDataSet {
+        
+        partial class DataDictionaryDataTable
+        {
+
+        }
+
     }
 }
