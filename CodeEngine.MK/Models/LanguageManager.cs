@@ -31,7 +31,11 @@ namespace CodeEngine.MK.Models
         public static A1.DataDictionaryRow[] GetTextByGroup(string tag, string language)
         {
             CodeEngine.MK.Data.AppDBDataSet.DataDictionaryDataTable tbl = _Adapter.GetData();
-            var rows = tbl.Where(f => f.Tags.Split(',').Contains(tag));
+            var rows = tbl.Where(
+                    f => f  .Tags
+                            .Split(',')
+                            .Select(k => k.Trim())
+                            .Contains(tag.Trim()));
             return rows.ToArray();
         }
 
