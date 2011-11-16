@@ -86,12 +86,69 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\LanguageBoard.resx">
+      <DependentUpon>LanguageBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainInformation.resx">
       <DependentUpon>MainInformation.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\K1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\K1.Designer.cs">
+      <DependentUpon>K1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\K2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\K2.Designer.cs">
+      <DependentUpon>K2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\K3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\K3.Designer.cs">
+      <DependentUpon>K3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\K4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\K4.Designer.cs">
+      <DependentUpon>K4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\K5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\K5.Designer.cs">
+      <DependentUpon>K5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\K6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\K6.Designer.cs">
+      <DependentUpon>K6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\K7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\K7.Designer.cs">
+      <DependentUpon>K7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\KAll.Designer.cs">
+      <DependentUpon>KAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LanguageBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LanguageBoard.Designer.cs">
+      <DependentUpon>LanguageBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MainInformation.cs">
       <SubType>Form</SubType>
