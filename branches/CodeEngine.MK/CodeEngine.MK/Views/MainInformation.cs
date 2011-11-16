@@ -26,6 +26,11 @@ namespace CodeEngine.MK.Views
         private void OnLanguageChange()
         { 
             //Load content here!!!
+            lblInformation.Tag = new RequestObject("lblInformation", new string[] { });
+
+
+            LanguageManager.LoadText(lblInformation);
+
         }
 
         private void btnIngredient_Click(object sender, EventArgs e)
@@ -50,7 +55,7 @@ namespace CodeEngine.MK.Views
 
         private void MainInformation_Load(object sender, EventArgs e)
         {
-
+            
         }
 
     }

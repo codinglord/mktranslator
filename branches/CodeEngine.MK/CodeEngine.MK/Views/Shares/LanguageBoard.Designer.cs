@@ -46,6 +46,7 @@
             this.rb_zh.TabStop = false;
             this.rb_zh.Tag = "LanguageOption";
             this.rb_zh.Text = "繁體中文 (台灣) จีน";
+            this.rb_zh.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
             // 
             // rb_ja
             // 
@@ -57,7 +58,7 @@
             this.rb_ja.TabStop = false;
             this.rb_ja.Tag = "LanguageOption";
             this.rb_ja.Text = "日本語 (ญี่ปุ่น)";
-            this.rb_ja.CheckedChanged += new System.EventHandler(this.rb_ja_CheckedChanged);
+            this.rb_ja.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
             // 
             // rb_ko
             // 
@@ -69,6 +70,7 @@
             this.rb_ko.TabStop = false;
             this.rb_ko.Tag = "LanguageOption";
             this.rb_ko.Text = "한국어 เกาหลี";
+            this.rb_ko.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
             // 
             // rb_vi
             // 
@@ -80,6 +82,7 @@
             this.rb_vi.TabStop = false;
             this.rb_vi.Tag = "LanguageOption";
             this.rb_vi.Text = "Tiếng Việt(เวียดนาม)";
+            this.rb_vi.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
             // 
             // rb_ru
             // 
@@ -91,6 +94,7 @@
             this.rb_ru.TabStop = false;
             this.rb_ru.Tag = "LanguageOption";
             this.rb_ru.Text = "Русский (รัชเชีย)";
+            this.rb_ru.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
             // 
             // rb_en
             // 
@@ -102,6 +106,7 @@
             this.rb_en.TabIndex = 6;
             this.rb_en.Tag = "LanguageOption";
             this.rb_en.Text = "English อังกฤษ";
+            this.rb_en.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
             // 
             // LanguageBoard
             // 
@@ -115,7 +120,6 @@
             this.Controls.Add(this.rb_en);
             this.Name = "LanguageBoard";
             this.Size = new System.Drawing.Size(234, 84);
-            this.Click += new System.EventHandler(this.LanguageBoard_Click);
             this.ResumeLayout(false);
 
         }
