@@ -67,6 +67,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Models\RequestObject.cs" />
     <Compile Include="Views\FormPortal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,7 +159,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\AppDB.sdf">
+    <Content Include="AppDB.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

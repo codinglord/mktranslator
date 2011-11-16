@@ -16,6 +16,7 @@ namespace CodeEngine.MK
 
         public static string Language { get; set; }
 
+        public static SysViewer CurrentView { get; private set; }
 
         public static void SwitchView(SysViewer viewer)
         {
@@ -23,7 +24,11 @@ namespace CodeEngine.MK
             {
                 Application.Run(new MainInformation());
             }
+
+            //Set current view.
+            Program.CurrentView = viewer;
         }
+
 
         /// <summary>
         /// The main entry point for the application.
