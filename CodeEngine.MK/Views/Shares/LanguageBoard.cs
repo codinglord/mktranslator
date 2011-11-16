@@ -31,15 +31,5 @@ namespace CodeEngine.MK.Views
             OnLanguageChange.Invoke();
         }
 
-        private void LanguageBoard_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rb_ja_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
