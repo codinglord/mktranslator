@@ -7,11 +7,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CodeEngine.MK.Views
+namespace CodeEngine.MK.Views.Conversations
 {
-    public partial class K6 : Form
+    public partial class ConversationAskMap : Form
     {
-        public K6()
+        public ConversationAskMap()
         {
             InitializeComponent();
         }

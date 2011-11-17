@@ -7,11 +7,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CodeEngine.MK.Views
+namespace CodeEngine.MK.Views.Informations
 {
-    public partial class KAll : Form
+    public partial class InformationMain : Form
     {
-        public KAll()
+        public InformationMain()
         {
             InitializeComponent();
         }

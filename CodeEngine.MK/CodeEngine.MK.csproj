@@ -68,82 +68,70 @@
       <DependentUpon>AppDBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Models\RequestObject.cs" />
-    <Compile Include="Views\FormPortal.cs">
+    <Compile Include="Views\Conversations\ConversationAccquire.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormPortal.Designer.cs">
-      <DependentUpon>FormPortal.cs</DependentUpon>
+    <Compile Include="Views\Conversations\ConversationAccquire.Designer.cs">
+      <DependentUpon>ConversationAccquire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationAskMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationAskMap.Designer.cs">
+      <DependentUpon>ConversationAskMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationAskPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationAskPrice.Designer.cs">
+      <DependentUpon>ConversationAskPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationEtc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationEtc.Designer.cs">
+      <DependentUpon>ConversationEtc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationMain.Designer.cs">
+      <DependentUpon>ConversationMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\LanguageManager.cs" />
     <Compile Include="Models\LanguageMapper.cs" />
     <Compile Include="Models\SysViewer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Views\FormPortal.resx">
-      <DependentUpon>FormPortal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\ConversationMain.resx">
+      <DependentUpon>ConversationMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Shares\LanguageBoard.resx">
       <DependentUpon>LanguageBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainInformation.resx">
-      <DependentUpon>MainInformation.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Portal.resx">
+      <DependentUpon>Portal.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Views\K1.cs">
+    <Compile Include="Views\Conversations\ConversationRecommendMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\K1.Designer.cs">
-      <DependentUpon>K1.cs</DependentUpon>
+    <Compile Include="Views\Conversations\ConversationRecommendMenu.Designer.cs">
+      <DependentUpon>ConversationRecommendMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\K2.cs">
+    <Compile Include="Views\Informations\InformationMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\K2.Designer.cs">
-      <DependentUpon>K2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\K3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\K3.Designer.cs">
-      <DependentUpon>K3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\K4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\K4.Designer.cs">
-      <DependentUpon>K4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\K5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\K5.Designer.cs">
-      <DependentUpon>K5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\K6.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\K6.Designer.cs">
-      <DependentUpon>K6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\K7.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\K7.Designer.cs">
-      <DependentUpon>K7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\KAll.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\KAll.Designer.cs">
-      <DependentUpon>KAll.cs</DependentUpon>
+    <Compile Include="Views\Informations\InformationMain.Designer.cs">
+      <DependentUpon>InformationMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Shares\LanguageBoard.cs">
       <SubType>UserControl</SubType>
@@ -151,11 +139,17 @@
     <Compile Include="Views\Shares\LanguageBoard.Designer.cs">
       <DependentUpon>LanguageBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainInformation.cs">
+    <Compile Include="Views\Portal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainInformation.Designer.cs">
-      <DependentUpon>MainInformation.cs</DependentUpon>
+    <Compile Include="Views\Portal.Designer.cs">
+      <DependentUpon>Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\TrainingMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\TrainingMain.Designer.cs">
+      <DependentUpon>TrainingMain.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

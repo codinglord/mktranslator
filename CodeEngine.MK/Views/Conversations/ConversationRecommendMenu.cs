@@ -7,11 +7,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CodeEngine.MK.Views
+namespace CodeEngine.MK.Views.Conversations
 {
-    public partial class K2 : Form
+    public partial class ConversationRecommendMenu : Form
     {
-        public K2()
+        public ConversationRecommendMenu()
         {
             InitializeComponent();
         }

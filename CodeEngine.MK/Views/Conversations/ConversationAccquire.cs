@@ -7,11 +7,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CodeEngine.MK.Views
+namespace CodeEngine.MK.Views.Conversations
 {
-    public partial class K7 : Form
+    public partial class ConversationAccquire : Form
     {
-        public K7()
+        public ConversationAccquire()
         {
             InitializeComponent();
         }

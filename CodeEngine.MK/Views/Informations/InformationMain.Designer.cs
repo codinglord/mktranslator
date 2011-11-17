@@ -1,6 +1,6 @@
-﻿namespace CodeEngine.MK.Views
+﻿namespace CodeEngine.MK.Views.Informations
 {
-    partial class K3
+    partial class InformationMain
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.Menu = this.mainMenu1;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Text = "K3";
+            this.Text = "InformationMain";
             this.AutoScroll = true;
         }
 

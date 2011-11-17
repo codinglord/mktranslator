@@ -8,7 +8,17 @@ namespace CodeEngine.MK.Models
     enum SysViewer
     {
 
-        MainInformation
+        Portal,
+        ConversationMain,
+        InformationMain,
+        TrainingMain,
+
+        //Conversations
+        ConversationAccquire,
+        ConversationAskMap,
+        ConversationAskPrice,
+        ConversationEtc,
+        ConversationRecommendMenu
 
     }
 }
