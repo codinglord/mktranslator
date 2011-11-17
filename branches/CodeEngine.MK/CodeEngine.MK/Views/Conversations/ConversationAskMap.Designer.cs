@@ -1,6 +1,6 @@
-﻿namespace CodeEngine.MK.Views
+﻿namespace CodeEngine.MK.Views.Conversations
 {
-    partial class K6
+    partial class ConversationAskMap
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.Menu = this.mainMenu1;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Text = "K6";
+            this.Text = "ConversationAskMap";
             this.AutoScroll = true;
         }
 
