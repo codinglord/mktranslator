@@ -23,6 +23,7 @@ namespace CodeEngine.MK
 
         static Program()
         {
+            Program.Language = "th";
             _Portal = new Portal();
         }
 
@@ -58,6 +59,16 @@ namespace CodeEngine.MK
                 case SysViewer.ConversationRecommendMenu:
                     form = new ConversationRecommendMenu();
                     break;
+                case SysViewer.InformationAboutMk:
+                    form = new InformationAboutMk();
+                    break;
+                case SysViewer.InformationAskMember:
+                    form = new InformationAskMember();
+                    break;
+                case SysViewer.InformationIngredient:
+                    form = new InformationIngredient();
+                    break;
+
                 default:
                     throw new Exception("Unexpected SysViewer!");
             }
