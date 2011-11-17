@@ -15,15 +15,15 @@ namespace CodeEngine.MK
     static class Program
     {
 
-        private static Form _Portal;
+        private static Portal _Portal;
         private static Stack<Form> _Forms = new Stack<Form>();
 
         public static string Language { get; set; }
         public static SysViewer CurrentView { get; private set; }
 
-        private static Program()
+        static Program()
         {
-            _Portal = new Form();
+            _Portal = new Portal();
         }
 
         public static void SwitchView(SysViewer viewer)
@@ -32,7 +32,7 @@ namespace CodeEngine.MK
             switch (viewer)
             {
                 case SysViewer.Portal:
-                    form = new Portal();
+                    form = _Portal;
                     break;
                 case SysViewer.ConversationMain:
                     form = new ConversationMain();
@@ -67,9 +67,11 @@ namespace CodeEngine.MK
             {
                 Program._Forms.Pop().Close();
             }
-
-            form.Show();
-            Program._Forms.Push(form);
+            if (!form.Equals(Program._Portal)) //Avoid duplicate form portal.
+            {
+                Program._Forms.Push(form);
+                form.Show();
+            }
             Program.CurrentView = viewer; //Set current view.
 
         }
