@@ -18,7 +18,15 @@ namespace CodeEngine.MK.Models
         ConversationAskMap,
         ConversationAskPrice,
         ConversationEtc,
-        ConversationRecommendMenu
+        ConversationRecommendMenu,
 
+        //Informations
+        InformationAboutMk,
+        InformationAskMember,
+        InformationIngredient,
+
+        //Trainings
+        TrainingConversationMk,
+        TrainingMainVocaburary
     }
 }

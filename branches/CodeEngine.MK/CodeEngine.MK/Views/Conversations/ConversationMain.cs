@@ -14,32 +14,43 @@ namespace CodeEngine.MK.Views.Conversations
         public ConversationMain()
         {
             InitializeComponent();
+            langBoard.OnLanguageChange += OnLanguageChange;
+        }
+
+        private void OnLanguageChange()
+        { 
+            //Load content here!!!
+            //lblInformation.Tag = new RequestObject("lblInformation", new string[] { });
+
+            //btnInformation.Tag = new RequestObject("");
+
+            //LanguageManager.LoadText(lblInformation);
         }
 
         private void OnNavigate(object sender, EventArgs e)
         {
             Button issuer = sender as Button;
-            if (issuer.Name == btnAccquire.Name)
+            if (issuer.Equals(btnAccquire))
             {
                 Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationAccquire);
             }
-            else if (issuer.Name == btnAskMap.Name)
+            else if (issuer.Equals(btnAskMap))
             {
                 Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationAskMap);
             }
-            else if (issuer.Name == btnAskPrice.Name)
+            else if (issuer.Equals(btnAskPrice))
             {
                 Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationAskPrice);
             }
-            else if (issuer.Name == btnConversationEtc.Name)
+            else if (issuer.Equals(btnConversationEtc))
             {
                 Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationEtc);
             }
-            else if (issuer.Name == btnMain.Name)
+            else if (issuer.Equals(btnMain))
             {
                 Program.SwitchView(CodeEngine.MK.Models.SysViewer.Portal);
             }
-            else if (issuer.Name == btnRecommendMenu.Name)
+            else if (issuer.Equals(btnRecommendMenu))
             {
                 Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationRecommendMenu);
             }

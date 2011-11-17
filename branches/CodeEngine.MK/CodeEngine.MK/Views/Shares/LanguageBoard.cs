@@ -28,8 +28,47 @@ namespace CodeEngine.MK.Views
         private void LanguageCheckedChanged(object sender, EventArgs e)
         {
             Program.Language = (sender as Control).Name.Split('_')[1];
-            OnLanguageChange.Invoke();
+            try
+            {
+                OnLanguageChange.Invoke();
+            }
+            catch (Exception)
+            {
+                
+
+            }
         }
+
+        private void LanguageBoard_ParentChanged(object sender, EventArgs e)
+        {
+            switch (Program.Language)
+            {
+                case "th":
+                    rb_th.Checked = true;
+                    break;
+                case "en":
+                    rb_en.Checked = true;
+                    break;
+                case "ko":
+                    rb_ko.Checked = true;
+                    break;
+                case "ru":
+                    rb_ru.Checked = true;
+                    break;
+                case "ja":
+                    rb_ja.Checked = true;
+                    break;
+                case "zh":
+                    rb_zh.Checked = true;
+                    break;
+                case "vi":
+                    rb_vi.Checked = true;
+                    break;
+                default:
+                    throw new Exception("Unexpected language = " + Program.Language + "!");
+            }
+        }
+
 
     }
 }

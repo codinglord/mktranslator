@@ -30,7 +30,7 @@
         private void InitializeComponent()
         {
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
-            this.languageBoard1 = new CodeEngine.MK.Views.LanguageBoard();
+            this.langBoard = new CodeEngine.MK.Views.LanguageBoard();
             this.lblConversation = new System.Windows.Forms.Label();
             this.btnConversationEtc = new System.Windows.Forms.Button();
             this.btnAccquire = new System.Windows.Forms.Button();
@@ -40,68 +40,68 @@
             this.btnMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // languageBoard1
+            // langBoard
             // 
-            this.languageBoard1.Location = new System.Drawing.Point(3, 3);
-            this.languageBoard1.Name = "languageBoard1";
-            this.languageBoard1.Size = new System.Drawing.Size(234, 84);
-            this.languageBoard1.TabIndex = 0;
+            this.langBoard.Location = new System.Drawing.Point(3, 3);
+            this.langBoard.Name = "langBoard";
+            this.langBoard.Size = new System.Drawing.Size(234, 104);
+            this.langBoard.TabIndex = 0;
             // 
             // lblConversation
             // 
-            this.lblConversation.Location = new System.Drawing.Point(3, 90);
+            this.lblConversation.Location = new System.Drawing.Point(3, 110);
             this.lblConversation.Name = "lblConversation";
             this.lblConversation.Size = new System.Drawing.Size(100, 20);
             this.lblConversation.Text = "lblConversation";
             // 
             // btnConversationEtc
             // 
-            this.btnConversationEtc.Location = new System.Drawing.Point(3, 113);
+            this.btnConversationEtc.Location = new System.Drawing.Point(3, 133);
             this.btnConversationEtc.Name = "btnConversationEtc";
-            this.btnConversationEtc.Size = new System.Drawing.Size(116, 46);
+            this.btnConversationEtc.Size = new System.Drawing.Size(116, 37);
             this.btnConversationEtc.TabIndex = 2;
             this.btnConversationEtc.Text = "btnConversationEtc";
             this.btnConversationEtc.Click += new System.EventHandler(this.OnNavigate);
             // 
             // btnAccquire
             // 
-            this.btnAccquire.Location = new System.Drawing.Point(3, 165);
+            this.btnAccquire.Location = new System.Drawing.Point(3, 176);
             this.btnAccquire.Name = "btnAccquire";
-            this.btnAccquire.Size = new System.Drawing.Size(116, 45);
+            this.btnAccquire.Size = new System.Drawing.Size(116, 36);
             this.btnAccquire.TabIndex = 3;
             this.btnAccquire.Text = "btnAccquire";
             this.btnAccquire.Click += new System.EventHandler(this.OnNavigate);
             // 
             // btnAskMap
             // 
-            this.btnAskMap.Location = new System.Drawing.Point(125, 165);
+            this.btnAskMap.Location = new System.Drawing.Point(125, 176);
             this.btnAskMap.Name = "btnAskMap";
-            this.btnAskMap.Size = new System.Drawing.Size(112, 45);
+            this.btnAskMap.Size = new System.Drawing.Size(112, 36);
             this.btnAskMap.TabIndex = 4;
             this.btnAskMap.Text = "btnAskMap";
             this.btnAskMap.Click += new System.EventHandler(this.OnNavigate);
             // 
             // btnRecommendMenu
             // 
-            this.btnRecommendMenu.Location = new System.Drawing.Point(125, 113);
+            this.btnRecommendMenu.Location = new System.Drawing.Point(125, 133);
             this.btnRecommendMenu.Name = "btnRecommendMenu";
-            this.btnRecommendMenu.Size = new System.Drawing.Size(112, 46);
+            this.btnRecommendMenu.Size = new System.Drawing.Size(112, 37);
             this.btnRecommendMenu.TabIndex = 5;
             this.btnRecommendMenu.Text = "btnRecommendMenu";
             this.btnRecommendMenu.Click += new System.EventHandler(this.OnNavigate);
             // 
             // btnAskPrice
             // 
-            this.btnAskPrice.Location = new System.Drawing.Point(3, 216);
+            this.btnAskPrice.Location = new System.Drawing.Point(3, 218);
             this.btnAskPrice.Name = "btnAskPrice";
-            this.btnAskPrice.Size = new System.Drawing.Size(116, 45);
+            this.btnAskPrice.Size = new System.Drawing.Size(116, 36);
             this.btnAskPrice.TabIndex = 6;
             this.btnAskPrice.Text = "btnAskPrice";
             this.btnAskPrice.Click += new System.EventHandler(this.OnNavigate);
             // 
             // btnMain
             // 
-            this.btnMain.Location = new System.Drawing.Point(165, 241);
+            this.btnMain.Location = new System.Drawing.Point(165, 245);
             this.btnMain.Name = "btnMain";
             this.btnMain.Size = new System.Drawing.Size(72, 20);
             this.btnMain.TabIndex = 7;
@@ -121,7 +121,7 @@
             this.Controls.Add(this.btnAccquire);
             this.Controls.Add(this.btnConversationEtc);
             this.Controls.Add(this.lblConversation);
-            this.Controls.Add(this.languageBoard1);
+            this.Controls.Add(this.langBoard);
             this.Menu = this.mainMenu1;
             this.Name = "ConversationMain";
             this.Text = "ConversationMain";
@@ -131,7 +131,7 @@
 
         #endregion
 
-        private LanguageBoard languageBoard1;
+        private LanguageBoard langBoard;
         private System.Windows.Forms.Label lblConversation;
         private System.Windows.Forms.Button btnConversationEtc;
         private System.Windows.Forms.Button btnAccquire;
