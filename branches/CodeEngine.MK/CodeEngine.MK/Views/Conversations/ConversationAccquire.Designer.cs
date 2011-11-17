@@ -1,6 +1,6 @@
-﻿namespace CodeEngine.MK
+﻿namespace CodeEngine.MK.Views.Conversations
 {
-    partial class frmPortal
+    partial class ConversationAccquire
     {
         /// <summary>
         /// Required designer variable.
@@ -29,22 +29,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
-            this.SuspendLayout();
-            // 
-            // frmPortal
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.Menu = this.mainMenu1;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Text = "ConversationAccquire";
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(240, 294);
-            this.Name = "frmPortal";
-            this.Text = "MK";
-            this.ResumeLayout(false);
-
         }
 
         #endregion
     }
 }
-

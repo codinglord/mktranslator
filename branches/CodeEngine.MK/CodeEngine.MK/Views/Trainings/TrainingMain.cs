@@ -7,11 +7,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CodeEngine.MK.Views
+namespace CodeEngine.MK.Views.Trainings
 {
-    public partial class K4 : Form
+    public partial class TrainingMain : Form
     {
-        public K4()
+        public TrainingMain()
         {
             InitializeComponent();
         }
