@@ -111,11 +111,17 @@
     <EmbeddedResource Include="Views\Conversations\ConversationMain.resx">
       <DependentUpon>ConversationMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Informations\InformationMain.resx">
+      <DependentUpon>InformationMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Shares\LanguageBoard.resx">
       <DependentUpon>LanguageBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Portal.resx">
       <DependentUpon>Portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\TrainingMain.resx">
+      <DependentUpon>TrainingMain.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -126,6 +132,24 @@
     </Compile>
     <Compile Include="Views\Conversations\ConversationRecommendMenu.Designer.cs">
       <DependentUpon>ConversationRecommendMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Informations\InformationAboutMk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Informations\InformationAboutMk.Designer.cs">
+      <DependentUpon>InformationAboutMk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Informations\InformationAskMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Informations\InformationAskMember.Designer.cs">
+      <DependentUpon>InformationAskMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Informations\InformationIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Informations\InformationIngredient.Designer.cs">
+      <DependentUpon>InformationIngredient.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Informations\InformationMain.cs">
       <SubType>Form</SubType>
@@ -145,11 +169,23 @@
     <Compile Include="Views\Portal.Designer.cs">
       <DependentUpon>Portal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Trainings\TrainingConversationMk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\TrainingConversationMk.Designer.cs">
+      <DependentUpon>TrainingConversationMk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Trainings\TrainingMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Trainings\TrainingMain.Designer.cs">
       <DependentUpon>TrainingMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\TrainingMainVocaburary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\TrainingMainVocaburary.Designer.cs">
+      <DependentUpon>TrainingMainVocaburary.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

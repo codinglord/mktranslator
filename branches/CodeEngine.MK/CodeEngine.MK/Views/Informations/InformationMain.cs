@@ -14,6 +14,43 @@ namespace CodeEngine.MK.Views.Informations
         public InformationMain()
         {
             InitializeComponent();
+            langBoard.OnLanguageChange += OnLanguageChange;
+        }
+
+        private void OnLanguageChange()
+        { 
+            //Load content here!!!
+            //lblInformation.Tag = new RequestObject("lblInformation", new string[] { });
+
+            //btnInformation.Tag = new RequestObject("");
+
+            //LanguageManager.LoadText(lblInformation);
+
+        }
+
+        private void OnNavigate(object sender, EventArgs e)
+        {
+            Button issuer = sender as Button;
+            if (issuer.Equals(btnAboutMK))
+            {
+                Program.SwitchView(CodeEngine.MK.Models.SysViewer.InformationAboutMk);
+            }
+            else if (issuer.Equals(btnAskMember))
+            {
+                Program.SwitchView(CodeEngine.MK.Models.SysViewer.InformationAskMember);
+            }
+            else if (issuer.Equals(btnIngredient))
+            {
+                Program.SwitchView(CodeEngine.MK.Models.SysViewer.InformationIngredient);
+            }
+            else if (issuer.Equals(btnMain))
+            {
+                Program.SwitchView(CodeEngine.MK.Models.SysViewer.Portal);
+            }
+            else
+            {
+                throw new NotImplementedException(issuer.Name+" not implemented yet!");
+            }
         }
     }
 }
