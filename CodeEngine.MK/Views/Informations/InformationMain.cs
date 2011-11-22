@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using CodeEngine.MK.Models;
 
 namespace CodeEngine.MK.Views.Informations
 {
@@ -20,11 +21,8 @@ namespace CodeEngine.MK.Views.Informations
         private void OnLanguageChange()
         { 
             //Load content here!!!
-            //lblInformation.Tag = new RequestObject("lblInformation", new string[] { });
-
-            //btnInformation.Tag = new RequestObject("");
-
-            //LanguageManager.LoadText(lblInformation);
+            lblInformation.Tag = new RequestObject("lblInformation", new string[] { });
+            LanguageManager.LoadText(lblInformation);
 
         }
 

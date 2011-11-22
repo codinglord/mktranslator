@@ -27,16 +27,14 @@ namespace CodeEngine.MK.Views
 
         private void LanguageCheckedChanged(object sender, EventArgs e)
         {
-            Program.Language = (sender as Control).Name.Split('_')[1];
+            string changedLang = (sender as Control).Name.Split('_')[1];
+            if (Program.Language != changedLang)
             try
             {
+                Program.Language = changedLang;
                 OnLanguageChange.Invoke();
             }
-            catch (Exception)
-            {
-                
-
-            }
+            catch (Exception){}
         }
 
         private void LanguageBoard_ParentChanged(object sender, EventArgs e)

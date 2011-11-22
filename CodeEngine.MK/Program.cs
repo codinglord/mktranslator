@@ -94,7 +94,8 @@ namespace CodeEngine.MK
         [MTAThread]
         static void Main()
         {
-            Application.Run(_Portal);
+            //Application.Run(_Portal);
+            Application.Run(new InformationIngredient());
         }
 
 
