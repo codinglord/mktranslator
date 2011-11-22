@@ -67,6 +67,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Models\ItemObject.cs" />
     <Compile Include="Models\RequestObject.cs" />
     <Compile Include="Views\Conversations\ConversationAccquire.cs">
       <SubType>Form</SubType>
@@ -110,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Conversations\ConversationMain.resx">
       <DependentUpon>ConversationMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Informations\InformationIngredient.resx">
+      <DependentUpon>InformationIngredient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Informations\InformationMain.resx">
       <DependentUpon>InformationMain.cs</DependentUpon>

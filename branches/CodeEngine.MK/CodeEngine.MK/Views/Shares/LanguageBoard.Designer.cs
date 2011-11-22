@@ -120,6 +120,7 @@
             this.rb_th.TabStop = false;
             this.rb_th.Tag = "LanguageOption";
             this.rb_th.Text = "Thai ภาษาไทย";
+            this.rb_th.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
             // 
             // lblChoose
             // 
