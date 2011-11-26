@@ -21,9 +21,11 @@ namespace CodeEngine.MK
         public static string Language { get; set; }
         public static SysViewer CurrentView { get; private set; }
 
+        public static string[] ZeroArrayString = new string[] { };
+
         static Program()
         {
-            Program.Language = "th";
+            Program.Language = "en";
             _Portal = new Portal();
         }
 

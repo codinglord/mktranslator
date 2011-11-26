@@ -26,19 +26,19 @@ namespace CodeEngine.MK.Views.Informations
         private void LoadText()
         { 
             string[] zeroArray = new string[]{};
-            lblIngredientInfo.Tag = new RequestObject("lblIngredientInfo", zeroArray);
+            lblIngredientInfo.Tag = new RequestObject("lblIngredientInfo", Program.ZeroArrayString);
             lblSelect.Tag = new RequestObject("lblSelect", "lblSelect");
-            cmbIngredient.Tag = new RequestObject("cmbIngredient", "ingredient");
-            //lblIngredientForOfficer.Tag = new RequestObject("lblIngredientForOfficer", zeroArray);
-            txtIngridentOfficer.Tag = new RequestObject("txtIngridentOfficer", zeroArray);
-            //lblIngredientForCustomer.Tag = new RequestObject("lblIngredientForCustomer", zeroArray);
-            txtIngredientForCustomer.Tag = new RequestObject("txtIngredientForCustomer", zeroArray);
+            cmbIngredient.Tag = new RequestObject("", "B-ส่วนผสมสินค้า") { UseKey = true };
 
+            lblIngredientForOfficer.Tag = new RequestObject("lblIngredientForOfficer", Program.ZeroArrayString) {FixLanguage = "th"};
+            txtIngridentOfficer.Tag = new RequestObject("", "B-ส่วนผสมสินค้า") { FixLanguage = "th"};
 
-            LanguageManager.LoadTextToComboPrimary(cmbIngredient);
-        
+            lblIngredientForCustomer.Tag = new RequestObject("lblIngredientForCustomer", Program.ZeroArrayString);
+            txtIngredientForCustomer.Tag = new RequestObject("", "B-ส่วนผสมสินค้า") ;
+            
+
+            LanguageManager.LoadDataToCombobox(cmbIngredient);        
         }
-
 
         private void OnLanguageChange()
         { 
@@ -55,7 +55,7 @@ namespace CodeEngine.MK.Views.Informations
 
         private void cmbIngredient_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LanguageManager.LoadTextByPrimary(
+            LanguageManager.LoadTextByKey(
                 ((sender as ComboBox).SelectedItem as ItemObject).ValueOfKey.ToString(),
                 txtIngridentOfficer,
                 txtIngredientForCustomer
