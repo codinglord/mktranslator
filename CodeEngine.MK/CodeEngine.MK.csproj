@@ -112,6 +112,21 @@
     <EmbeddedResource Include="Views\Conversations\ConversationMain.resx">
       <DependentUpon>ConversationMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D1.resx">
+      <DependentUpon>D1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D2.resx">
+      <DependentUpon>D2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D3.resx">
+      <DependentUpon>D3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D4.resx">
+      <DependentUpon>D4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D5.resx">
+      <DependentUpon>D5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Conversations\G1.resx">
       <DependentUpon>G1.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +181,36 @@
     </Compile>
     <Compile Include="Views\Conversations\ConversationRecommendMenu.Designer.cs">
       <DependentUpon>ConversationRecommendMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D1.Designer.cs">
+      <DependentUpon>D1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D2.Designer.cs">
+      <DependentUpon>D2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D3.Designer.cs">
+      <DependentUpon>D3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D4.Designer.cs">
+      <DependentUpon>D4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D5.Designer.cs">
+      <DependentUpon>D5.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Conversations\G1.cs">
       <SubType>Form</SubType>

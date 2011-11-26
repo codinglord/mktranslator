@@ -107,7 +107,12 @@ namespace CodeEngine.MK
             //Application.Run(new J2());
             //Application.Run(new J3());
             //Application.Run(new J4());
-            Application.Run(new J5());
+            //Application.Run(new J5());
+            //Application.Run(new D1());
+            //Application.Run(new D2());
+            //Application.Run(new D3());
+            Application.Run(new D4());
+            //Application.Run(new D5());
         }
 
 
