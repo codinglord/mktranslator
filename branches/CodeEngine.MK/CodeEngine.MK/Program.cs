@@ -102,9 +102,12 @@ namespace CodeEngine.MK
             //Application.Run(new InformationAskMember());
             //Application.Run(new G1());
             //Application.Run(new G2());
-            Application.Run(new G3());
-            
-            
+            //Application.Run(new G3());
+            //Application.Run(new J1());
+            //Application.Run(new J2());
+            //Application.Run(new J3());
+            //Application.Run(new J4());
+            Application.Run(new J5());
         }
 
 
