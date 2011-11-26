@@ -20,7 +20,7 @@ namespace CodeEngine.MK
 
         public static string Language { get; set; }
         public static SysViewer CurrentView { get; private set; }
-
+        public const string FixLanguage = "th";
         public static string[] ZeroArrayString = new string[] { };
 
         static Program()
@@ -97,7 +97,8 @@ namespace CodeEngine.MK
         static void Main()
         {
             //Application.Run(_Portal);
-            Application.Run(new InformationIngredient());
+            //Application.Run(new InformationAboutMk());
+            Application.Run(new InformationAskMember());
         }
 
 
