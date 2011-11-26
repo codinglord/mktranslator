@@ -18,6 +18,7 @@ namespace CodeEngine.MK
         private static Portal _Portal;
         private static Stack<Form> _Forms = new Stack<Form>();
 
+
         public static string Language { get; set; }
         public static SysViewer CurrentView { get; private set; }
         public const string FixLanguage = "th";
@@ -98,7 +99,12 @@ namespace CodeEngine.MK
         {
             //Application.Run(_Portal);
             //Application.Run(new InformationAboutMk());
-            Application.Run(new InformationAskMember());
+            //Application.Run(new InformationAskMember());
+            //Application.Run(new G1());
+            //Application.Run(new G2());
+            Application.Run(new G3());
+            
+            
         }
 
 
