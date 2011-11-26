@@ -112,6 +112,12 @@
     <EmbeddedResource Include="Views\Conversations\ConversationMain.resx">
       <DependentUpon>ConversationMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Informations\InformationAboutMk.resx">
+      <DependentUpon>InformationAboutMk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Informations\InformationAskMember.resx">
+      <DependentUpon>InformationAskMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Informations\InformationIngredient.resx">
       <DependentUpon>InformationIngredient.cs</DependentUpon>
     </EmbeddedResource>
