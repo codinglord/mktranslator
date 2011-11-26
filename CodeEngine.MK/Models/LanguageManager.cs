@@ -43,7 +43,7 @@ namespace CodeEngine.MK.Models
             }
         }
 
-        public static void LoadTextToComboPrimary(ComboBox control)
+        public static void LoadDataToCombobox(ComboBox control)
         {
             if (control.Items.Count != 0)
             {
@@ -52,8 +52,8 @@ namespace CodeEngine.MK.Models
 
             RequestObject req = control.Tag as RequestObject;
             CodeEngine.MK.Data.AppDBDataSet.DataDictionaryDataTable tbl = _Adapter.GetData();
-            var rows = tbl.Where(f => f.Tags.Split(',').Contains(req.Tags[0]) && !f.Key.StartsWith("_"))
-                            .Select(f => new ItemObject(f[req.Language].ToString(), f.Key));
+            var rows = tbl.Where(f => f.Tags.Split(',').Contains(req.Tags[0]))
+                          .Select(f => new ItemObject(f[req.Language].ToString(), f.Key));
 
             foreach (var i in rows)
             {
@@ -62,15 +62,14 @@ namespace CodeEngine.MK.Models
             
         }
 
-        public static void LoadTextByPrimary(string key,params Control[] controls)
+        public static void LoadTextByKey(string key,params Control[] controls)
         {
             
             CodeEngine.MK.Data.AppDBDataSet.DataDictionaryDataTable tbl = _Adapter.GetData();
-            string prefix = "_";
             foreach (var i in controls)
             {
                 RequestObject req = i.Tag as RequestObject;
-                var rows = tbl.FirstOrDefault(f => prefix + f.Key.Trim() == prefix + key.Trim());
+                var rows = tbl.FirstOrDefault(f => req.Prefix + f.Key.Trim() == req.Prefix + key.Trim());
                 if (rows != null)
                 {
                     i.Text = rows[req.Language].ToString();
@@ -79,7 +78,6 @@ namespace CodeEngine.MK.Models
                 {
                     i.Text = "No text was found!";
                 }
-                prefix = "_" + prefix;
             }
             
         }
