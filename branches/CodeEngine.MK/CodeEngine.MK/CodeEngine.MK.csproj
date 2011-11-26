@@ -139,6 +139,21 @@
     <EmbeddedResource Include="Views\Portal.resx">
       <DependentUpon>Portal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J1.resx">
+      <DependentUpon>J1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J2.resx">
+      <DependentUpon>J2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J3.resx">
+      <DependentUpon>J3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J4.resx">
+      <DependentUpon>J4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J5.resx">
+      <DependentUpon>J5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Trainings\TrainingMain.resx">
       <DependentUpon>TrainingMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +220,36 @@
     </Compile>
     <Compile Include="Views\Portal.Designer.cs">
       <DependentUpon>Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J1.Designer.cs">
+      <DependentUpon>J1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J2.Designer.cs">
+      <DependentUpon>J2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J3.Designer.cs">
+      <DependentUpon>J3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J4.Designer.cs">
+      <DependentUpon>J4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J5.Designer.cs">
+      <DependentUpon>J5.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Trainings\TrainingConversationMk.cs">
       <SubType>Form</SubType>
