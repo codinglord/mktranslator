@@ -28,13 +28,13 @@ namespace CodeEngine.MK.Views.Informations
             string[] zeroArray = new string[]{};
             lblIngredientInfo.Tag = new RequestObject("lblIngredientInfo", Program.ZeroArrayString);
             lblSelect.Tag = new RequestObject("lblSelect", "lblSelect");
-            cmbIngredient.Tag = new RequestObject("", "B-ส่วนผสมสินค้า") { UseKey = true };
+            cmbIngredient.Tag = new RequestObject(string.Empty, "B-ส่วนผสมสินค้า") { UseKey = true };
 
             lblIngredientForOfficer.Tag = new RequestObject("lblIngredientForOfficer", Program.ZeroArrayString) {FixLanguage = "th"};
-            txtIngridentOfficer.Tag = new RequestObject("", "B-ส่วนผสมสินค้า") { FixLanguage = "th"};
+            txtIngridentOfficer.Tag = new RequestObject(string.Empty, "B-ส่วนผสมสินค้า") { FixLanguage = "th" };
 
             lblIngredientForCustomer.Tag = new RequestObject("lblIngredientForCustomer", Program.ZeroArrayString);
-            txtIngredientForCustomer.Tag = new RequestObject("", "B-ส่วนผสมสินค้า") ;
+            txtIngredientForCustomer.Tag = new RequestObject(string.Empty, "B-ส่วนผสมสินค้า");
             
 
             LanguageManager.LoadDataToCombobox(cmbIngredient);        
