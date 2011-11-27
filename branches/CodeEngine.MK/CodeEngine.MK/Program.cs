@@ -32,20 +32,21 @@ namespace CodeEngine.MK
 
         public static void SwitchView(SysViewer viewer)
         {
+
+                //case SysViewer.Portal:
+                //    form = _Portal;
+
             Form form = null;
             switch (viewer)
             {
                 case SysViewer.Portal:
                     form = _Portal;
                     break;
-                case SysViewer.ConversationMain:
-                    form = new ConversationMain();
+                case SysViewer.ConversationAccquire:
+                    form = new ConversationAccquire();
                     break;
-                case SysViewer.InformationMain:
-                    form = new InformationMain();
-                    break;
-                case SysViewer.TrainingMain:
-                    form = new TrainingMain();
+                case SysViewer.ConversationRecommendMenu:
+                    form = new ConversationRecommendMenu();
                     break;
                 case SysViewer.ConversationAccquire:
                     form = new ConversationAccquire();
@@ -59,8 +60,65 @@ namespace CodeEngine.MK
                 case SysViewer.ConversationEtc:
                     form = new ConversationEtc();
                     break;
+                case SysViewer.ConversationMain:
+                    form = new ConversationMain();
+                    break;
                 case SysViewer.ConversationRecommendMenu:
                     form = new ConversationRecommendMenu();
+                    break;
+                case SysViewer.D:
+                    form = new D();
+                    break;
+                case SysViewer.D1:
+                    form = new D1();
+                    break;
+                case SysViewer.D2:
+                    form = new D2();
+                    break;
+                case SysViewer.D3:
+                    form = new D3();
+                    break;
+                case SysViewer.D4:
+                    form = new D4();
+                    break;
+                case SysViewer.D5:
+                    form = new D5();
+                    break;
+                case SysViewer.F:
+                    form = new F();
+                    break;
+                case SysViewer.G:
+                    form = new G();
+                    break;
+                case SysViewer.G1:
+                    form = new G1();
+                    break;
+                case SysViewer.G2:
+                    form = new G2();
+                    break;
+                case SysViewer.G3:
+                    form = new G3();
+                    break;
+                case SysViewer.H:
+                    form = new H();
+                    break;
+                case SysViewer.I:
+                    form = new I();
+                    break;
+                case SysViewer.I1:
+                    form = new I1();
+                    break;
+                case SysViewer.I2:
+                    form = new I2();
+                    break;
+                case SysViewer.I3:
+                    form = new I3();
+                    break;
+                case SysViewer.I4:
+                    form = new I4();
+                    break;
+                case SysViewer.I5:
+                    form = new I5();
                     break;
                 case SysViewer.InformationAboutMk:
                     form = new InformationAboutMk();
@@ -71,9 +129,54 @@ namespace CodeEngine.MK
                 case SysViewer.InformationIngredient:
                     form = new InformationIngredient();
                     break;
-
-                default:
-                    throw new Exception("Unexpected SysViewer!");
+                case SysViewer.InformationMain:
+                    form = new InformationMain();
+                    break;
+                case SysViewer.J:
+                    form = new J();
+                    break;
+                case SysViewer.J1:
+                    form = new J1();
+                    break;
+                case SysViewer.J2:
+                    form = new J2();
+                    break;
+                case SysViewer.J3:
+                    form = new J3();
+                    break;
+                case SysViewer.J4:
+                    form = new J4();
+                    break;
+                case SysViewer.J5:
+                    form = new J5();
+                    break;
+                case SysViewer.K:
+                    form = new K();
+                    break;
+                case SysViewer.K1:
+                    form = new K1();
+                    break;
+                case SysViewer.K2:
+                    form = new K2();
+                    break;
+                case SysViewer.K3:
+                    form = new K3();
+                    break;
+                case SysViewer.K4:
+                    form = new K4();
+                    break;
+                case SysViewer.K5:
+                    form = new K5();
+                    break;
+                case SysViewer.TrainingConversationMk:
+                    form = new TrainingConversationMk();
+                    break;
+                case SysViewer.TrainingMain:
+                    form = new TrainingMain();
+                    break;
+                case SysViewer.TrainingMainVocaburary:
+                    form = new TrainingMainVocaburary();
+                    break;
             }
 
             
@@ -99,7 +202,7 @@ namespace CodeEngine.MK
         {
             Application.Run(_Portal);
             //Application.Run(new InformationAboutMk());
-            Application.Run(new InformationAskMember());
+            //Application.Run(new InformationAskMember());
             //Application.Run(new G1());
             //Application.Run(new G2());
             //Application.Run(new G3());
