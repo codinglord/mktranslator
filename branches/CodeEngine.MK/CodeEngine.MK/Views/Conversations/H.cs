@@ -10,9 +10,9 @@ using CodeEngine.MK.Models;
 
 namespace CodeEngine.MK.Views.Conversations
 {
-    public partial class PricePromotion : Form
+    public partial class H : Form
     {
-        public PricePromotion()
+        public H()
         {
             InitializeComponent();
             this.LoadText();
@@ -23,14 +23,13 @@ namespace CodeEngine.MK.Views.Conversations
             string tag = "H-Price&Promotion";
 
 
-            txtQuestion.Tag = new RequestObject(string.Empty, tag, "question")
-            {
-                FixLanguage = Program.FixLanguage
-            };
+            txtQuestion.Tag = new RequestObject(string.Empty, tag, "question"){};
+            txtAnswer.Tag = new RequestObject(string.Empty, tag, "answer") { };
             cmbSelector.Tag = new RequestObject(string.Empty, tag, "question");
 
             LanguageManager.LoadLabels(
                 new string[] { tag },
+                lblAnswer,
                 lblHead,
                 lblQuestion,
                 lblSelector
@@ -42,7 +41,8 @@ namespace CodeEngine.MK.Views.Conversations
         {
             LanguageManager.LoadTextByKey(
                 ((sender as ComboBox).SelectedItem as ItemObject).ValueOfKey.ToString(),
-                txtQuestion
+                txtQuestion,
+                txtAnswer
                 );
         }
     }
