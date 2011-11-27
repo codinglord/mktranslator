@@ -1,6 +1,6 @@
 ﻿namespace CodeEngine.MK.Views.Conversations
 {
-    partial class PricePromotion
+    partial class H
     {
         /// <summary>
         /// Required designer variable.
@@ -59,6 +59,7 @@
             this.cmbSelector.Name = "cmbSelector";
             this.cmbSelector.Size = new System.Drawing.Size(233, 22);
             this.cmbSelector.TabIndex = 36;
+            this.cmbSelector.SelectedIndexChanged += new System.EventHandler(this.cmbSelector_SelectedIndexChanged);
             // 
             // lblHead
             // 
@@ -90,7 +91,7 @@
             this.lblAnswer.Size = new System.Drawing.Size(135, 20);
             this.lblAnswer.Text = "lblAnswer";
             // 
-            // PricePromotion
+            // H
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -103,7 +104,7 @@
             this.Controls.Add(this.cmbSelector);
             this.Controls.Add(this.lblHead);
             this.Controls.Add(this.lblSelector);
-            this.Name = "PricePromotion";
+            this.Name = "H";
             this.Text = "PricePromotion";
             this.ResumeLayout(false);
 
