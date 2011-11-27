@@ -56,10 +56,11 @@ namespace CodeEngine.MK.Models
 
             RequestObject req = control.Tag as RequestObject;
             CodeEngine.MK.Data.AppDBDataSet.DataDictionaryDataTable tbl = _Cached;
-            var rows = tbl.Where(f => f.Tags.Split(',').Select(d => d.Trim()).Contains(req.Tags[0].Trim())
+            var rows = tbl.Where(
+                f =>  req.Tags.TrueForAll(d => f.Tags.Split(',').Select(s => s.Trim()).Contains(d))  
                 && (string.IsNullOrEmpty(req.Key) || f.Key == req.Key)
                 )
-                          .Select(f => new ItemObject(f[req.Language].ToString(), f.Key));
+                .Select(f => new ItemObject(f[req.Language].ToString(), f.Key));
 
             foreach (var i in rows)
             {
