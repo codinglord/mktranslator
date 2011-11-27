@@ -48,9 +48,9 @@ namespace CodeEngine.MK
                 case SysViewer.ConversationRecommendMenu:
                     form = new ConversationRecommendMenu();
                     break;
-                case SysViewer.ConversationAccquire:
-                    form = new ConversationAccquire();
-                    break;
+                //case SysViewer.ConversationAccquire:
+                //    form = new ConversationAccquire();
+                //    break;
                 case SysViewer.ConversationAskMap:
                     form = new ConversationAskMap();
                     break;
@@ -63,9 +63,9 @@ namespace CodeEngine.MK
                 case SysViewer.ConversationMain:
                     form = new ConversationMain();
                     break;
-                case SysViewer.ConversationRecommendMenu:
-                    form = new ConversationRecommendMenu();
-                    break;
+                //case SysViewer.ConversationRecommendMenu:
+                //    form = new ConversationRecommendMenu();
+                //    break;
                 case SysViewer.D:
                     form = new D();
                     break;
@@ -200,10 +200,10 @@ namespace CodeEngine.MK
         [MTAThread]
         static void Main()
         {
-            Application.Run(_Portal);
+            //Application.Run(_Portal);
             //Application.Run(new InformationAboutMk());
             //Application.Run(new InformationAskMember());
-            //Application.Run(new G1());
+            Application.Run(new G1());
             //Application.Run(new G2());
             //Application.Run(new G3());
             //Application.Run(new J1());
