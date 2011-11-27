@@ -124,6 +124,12 @@ namespace CodeEngine.MK
             //Application.Run(new I3());
             //Application.Run(new I4());
             //Application.Run(new I5());
+            //Application.Run(new K());
+            //Application.Run(new K1());
+            //Application.Run(new K2());
+            //Application.Run(new K3());
+            //Application.Run(new K4());
+            //Application.Run(new K5());
         }
 
 
