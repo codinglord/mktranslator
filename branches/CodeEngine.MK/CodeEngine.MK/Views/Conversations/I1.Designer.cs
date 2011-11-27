@@ -37,6 +37,9 @@
             this.lblSelector2 = new System.Windows.Forms.Label();
             this.txtAnswer2 = new System.Windows.Forms.TextBox();
             this.lblAnswer2 = new System.Windows.Forms.Label();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // cmbSelector
@@ -108,12 +111,26 @@
             this.lblAnswer2.Size = new System.Drawing.Size(135, 20);
             this.lblAnswer2.Text = "lblAnswer2";
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // I1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(240, 294);
+            this.ClientSize = new System.Drawing.Size(240, 268);
             this.Controls.Add(this.cmbSelector2);
             this.Controls.Add(this.lblSelector2);
             this.Controls.Add(this.txtAnswer2);
@@ -123,6 +140,7 @@
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblHead);
+            this.Menu = this.mnu;
             this.Name = "I1";
             this.Text = "I1";
             this.ResumeLayout(false);
@@ -140,5 +158,8 @@
         private System.Windows.Forms.Label lblSelector2;
         private System.Windows.Forms.TextBox txtAnswer2;
         private System.Windows.Forms.Label lblAnswer2;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }

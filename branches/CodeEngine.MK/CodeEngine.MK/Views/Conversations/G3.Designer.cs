@@ -40,6 +40,9 @@
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.mainMenu5 = new System.Windows.Forms.MainMenu();
             this.mainMenu6 = new System.Windows.Forms.MainMenu();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // lblSelector
@@ -80,6 +83,20 @@
             this.txtQuestion.Size = new System.Drawing.Size(233, 75);
             this.txtQuestion.TabIndex = 36;
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // G3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -110,5 +127,8 @@
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.MainMenu mainMenu5;
         private System.Windows.Forms.MainMenu mainMenu6;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }
