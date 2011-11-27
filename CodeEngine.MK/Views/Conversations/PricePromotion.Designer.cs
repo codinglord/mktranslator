@@ -1,6 +1,6 @@
 ﻿namespace CodeEngine.MK.Views.Conversations
 {
-    partial class G1
+    partial class PricePromotion
     {
         /// <summary>
         /// Required designer variable.
@@ -30,62 +30,81 @@
         {
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.lblQuestion = new System.Windows.Forms.Label();
-            this.lblSelector = new System.Windows.Forms.Label();
             this.cmbSelector = new System.Windows.Forms.ComboBox();
             this.lblHead = new System.Windows.Forms.Label();
+            this.lblSelector = new System.Windows.Forms.Label();
+            this.txtAnswer = new System.Windows.Forms.TextBox();
+            this.lblAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtQuestion
             // 
-            this.txtQuestion.Location = new System.Drawing.Point(4, 93);
+            this.txtQuestion.Location = new System.Drawing.Point(4, 100);
             this.txtQuestion.Multiline = true;
             this.txtQuestion.Name = "txtQuestion";
             this.txtQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtQuestion.Size = new System.Drawing.Size(233, 75);
-            this.txtQuestion.TabIndex = 27;
+            this.txtQuestion.TabIndex = 37;
             // 
             // lblQuestion
             // 
-            this.lblQuestion.Location = new System.Drawing.Point(4, 70);
+            this.lblQuestion.Location = new System.Drawing.Point(4, 77);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(135, 20);
             this.lblQuestion.Text = "lblQuestion";
             // 
-            // lblSelector
-            // 
-            this.lblSelector.Location = new System.Drawing.Point(4, 22);
-            this.lblSelector.Name = "lblSelector";
-            this.lblSelector.Size = new System.Drawing.Size(100, 20);
-            this.lblSelector.Text = "lblSelector";
-            // 
             // cmbSelector
             // 
-            this.cmbSelector.Location = new System.Drawing.Point(4, 45);
+            this.cmbSelector.Location = new System.Drawing.Point(4, 52);
             this.cmbSelector.Name = "cmbSelector";
             this.cmbSelector.Size = new System.Drawing.Size(233, 22);
-            this.cmbSelector.TabIndex = 25;
-            this.cmbSelector.SelectedIndexChanged += new System.EventHandler(this.cmbSelector_SelectedIndexChanged);
+            this.cmbSelector.TabIndex = 36;
             // 
             // lblHead
             // 
-            this.lblHead.Location = new System.Drawing.Point(3, 2);
+            this.lblHead.Location = new System.Drawing.Point(3, 9);
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(100, 20);
             this.lblHead.Text = "lblHead";
             // 
-            // G1
+            // lblSelector
+            // 
+            this.lblSelector.Location = new System.Drawing.Point(4, 29);
+            this.lblSelector.Name = "lblSelector";
+            this.lblSelector.Size = new System.Drawing.Size(100, 20);
+            this.lblSelector.Text = "lblSelector";
+            // 
+            // txtAnswer
+            // 
+            this.txtAnswer.Location = new System.Drawing.Point(3, 210);
+            this.txtAnswer.Multiline = true;
+            this.txtAnswer.Name = "txtAnswer";
+            this.txtAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtAnswer.Size = new System.Drawing.Size(233, 75);
+            this.txtAnswer.TabIndex = 42;
+            // 
+            // lblAnswer
+            // 
+            this.lblAnswer.Location = new System.Drawing.Point(3, 187);
+            this.lblAnswer.Name = "lblAnswer";
+            this.lblAnswer.Size = new System.Drawing.Size(135, 20);
+            this.lblAnswer.Text = "lblAnswer";
+            // 
+            // PricePromotion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 294);
+            this.Controls.Add(this.txtAnswer);
+            this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.lblQuestion);
-            this.Controls.Add(this.lblSelector);
             this.Controls.Add(this.cmbSelector);
             this.Controls.Add(this.lblHead);
-            this.Name = "G1";
-            this.Text = "G1";
+            this.Controls.Add(this.lblSelector);
+            this.Name = "PricePromotion";
+            this.Text = "PricePromotion";
             this.ResumeLayout(false);
 
         }
@@ -94,8 +113,10 @@
 
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Label lblQuestion;
-        private System.Windows.Forms.Label lblSelector;
         private System.Windows.Forms.ComboBox cmbSelector;
         private System.Windows.Forms.Label lblHead;
+        private System.Windows.Forms.Label lblSelector;
+        private System.Windows.Forms.TextBox txtAnswer;
+        private System.Windows.Forms.Label lblAnswer;
     }
 }
