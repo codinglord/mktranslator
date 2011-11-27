@@ -97,9 +97,9 @@ namespace CodeEngine.MK
         [MTAThread]
         static void Main()
         {
-            //Application.Run(_Portal);
+            Application.Run(_Portal);
             //Application.Run(new InformationAboutMk());
-            //Application.Run(new InformationAskMember());
+            Application.Run(new InformationAskMember());
             //Application.Run(new G1());
             //Application.Run(new G2());
             //Application.Run(new G3());

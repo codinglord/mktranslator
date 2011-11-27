@@ -33,6 +33,9 @@
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblHead = new System.Windows.Forms.Label();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // cmbSelector
@@ -73,17 +76,33 @@
             this.lblHead.Size = new System.Drawing.Size(100, 20);
             this.lblHead.Text = "lblHead";
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // D1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(240, 294);
+            this.ClientSize = new System.Drawing.Size(240, 268);
             this.Controls.Add(this.cmbSelector);
             this.Controls.Add(this.lblSelector);
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblHead);
+            this.Menu = this.mnu;
             this.Name = "D1";
             this.Text = "D1";
             this.ResumeLayout(false);
@@ -97,5 +116,8 @@
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label lblHead;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }

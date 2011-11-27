@@ -39,6 +39,9 @@
             this.cmbSelector = new System.Windows.Forms.ComboBox();
             this.lblHead = new System.Windows.Forms.Label();
             this.mainMenu5 = new System.Windows.Forms.MainMenu();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // txtQuestion
@@ -79,6 +82,20 @@
             this.lblHead.Size = new System.Drawing.Size(100, 20);
             this.lblHead.Text = "lblHead";
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // G2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -108,6 +125,9 @@
         private System.Windows.Forms.ComboBox cmbSelector;
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.MainMenu mainMenu5;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
 
     }
 }

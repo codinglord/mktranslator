@@ -6,7 +6,6 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,16 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.cmbSelector = new System.Windows.Forms.ComboBox();
-            this.mainMenu2 = new System.Windows.Forms.MainMenu();
             this.lblSelector = new System.Windows.Forms.Label();
-            this.mainMenu4 = new System.Windows.Forms.MainMenu();
-            this.mainMenu3 = new System.Windows.Forms.MainMenu();
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblHead = new System.Windows.Forms.Label();
-            this.mainMenu5 = new System.Windows.Forms.MainMenu();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // cmbSelector
@@ -79,6 +76,21 @@
             this.lblHead.Size = new System.Drawing.Size(100, 20);
             this.lblHead.Text = "lblHead";
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // J1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -90,7 +102,7 @@
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblHead);
-            this.Menu = this.mainMenu1;
+            this.Menu = this.mnu;
             this.Name = "J1";
             this.Text = "J1";
             this.ResumeLayout(false);
@@ -100,13 +112,12 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cmbSelector;
-        private System.Windows.Forms.MainMenu mainMenu2;
         private System.Windows.Forms.Label lblSelector;
-        private System.Windows.Forms.MainMenu mainMenu4;
-        private System.Windows.Forms.MainMenu mainMenu3;
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label lblHead;
-        private System.Windows.Forms.MainMenu mainMenu5;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }
