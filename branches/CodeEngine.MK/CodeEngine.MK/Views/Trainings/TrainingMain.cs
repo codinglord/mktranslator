@@ -30,7 +30,7 @@ namespace CodeEngine.MK.Views.Trainings
         {
             if (sender.Equals(btnVocaburary))
             {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.TrainingMainVocaburary);
+                Program.SwitchView(CodeEngine.MK.Models.SysViewer.J);
             }
             else if (sender.Equals(btnMain))
             {
@@ -38,7 +38,7 @@ namespace CodeEngine.MK.Views.Trainings
             }
             else if (sender.Equals(btnConversation))
             {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.TrainingConversationMk);
+                Program.SwitchView(CodeEngine.MK.Models.SysViewer.K);
             }
             else
             {
