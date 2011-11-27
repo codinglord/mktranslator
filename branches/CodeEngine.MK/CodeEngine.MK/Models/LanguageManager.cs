@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using A1 = CodeEngine.MK.Data.AppDBDataSet;
 using CodeEngine.MK.Data.AppDBDataSetTableAdapters;
 using System.Data;
+using System.Text.RegularExpressions;
 
 namespace CodeEngine.MK.Models
 {
@@ -98,7 +99,38 @@ namespace CodeEngine.MK.Models
             
         }
 
-        public static void LoadLabels(string[] tags,params Control[] controls)
+        public static void LoadLabels(string[] tags, params Control[] controls)
+        {
+            foreach (var i in controls)
+            {
+                RequestObject iRequestObject = new RequestObject(
+                    i.Name, Program.ZeroArrayString
+                );
+                iRequestObject.Tags.Add("label");
+                iRequestObject.Tags.AddRange(tags);
+                i.Tag = iRequestObject;
+                var iRow = _Cached.FirstOrDefault(f => f.Key.Trim() == i.Name.Trim()
+                    &&
+                    (tags.Length == 0 || Array.TrueForAll(tags, k => f.Tags.Split(',').Select(d => d.Trim()).Contains(k.Trim())))
+                    );
+                if (iRow != null)
+                {
+                    i.Text = iRow[iRequestObject.Language].ToString();
+                }
+                else
+                {
+                    i.Text = string.Format("{0} was not found!", i.Name);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="displayText">{0} = dynamic {1} = fixed.</param>
+        /// <param name="tags"></param>
+        /// <param name="controls"></param>
+        public static void LoadLabels(string patternText,string[] tags,params Control[] controls)
         {
             foreach (var i in controls)
             {
@@ -114,7 +146,11 @@ namespace CodeEngine.MK.Models
                     );
                 if (iRow != null)
                 {
-                    i.Text = iRow[iRequestObject.Language].ToString();
+
+                    i.Text = string.Format(patternText,
+                        iRow[iRequestObject.Language].ToString(),
+                        iRow[Program.FixLanguage].ToString()
+                        );
                 }
                 else
                 {
