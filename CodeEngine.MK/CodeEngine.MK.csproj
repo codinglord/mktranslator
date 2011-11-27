@@ -202,6 +202,24 @@
     <EmbeddedResource Include="Views\Trainings\J5.resx">
       <DependentUpon>J5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K.resx">
+      <DependentUpon>K.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K1.resx">
+      <DependentUpon>K1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K2.resx">
+      <DependentUpon>K2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K3.resx">
+      <DependentUpon>K3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K4.resx">
+      <DependentUpon>K4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K5.resx">
+      <DependentUpon>K5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Trainings\TrainingMain.resx">
       <DependentUpon>TrainingMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,6 +412,42 @@
     </Compile>
     <Compile Include="Views\Trainings\J5.Designer.cs">
       <DependentUpon>J5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K.Designer.cs">
+      <DependentUpon>K.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K1.Designer.cs">
+      <DependentUpon>K1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K2.Designer.cs">
+      <DependentUpon>K2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K3.Designer.cs">
+      <DependentUpon>K3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K4.Designer.cs">
+      <DependentUpon>K4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K5.Designer.cs">
+      <DependentUpon>K5.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Trainings\TrainingConversationMk.cs">
       <SubType>Form</SubType>
