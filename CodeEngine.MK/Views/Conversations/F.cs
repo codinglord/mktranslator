@@ -45,5 +45,10 @@ namespace CodeEngine.MK.Views.Conversations
                 txtQuestion
                 );
         }
+
+        private void mnuChangeLanguage_Click(object sender, EventArgs e)
+        {
+            Program.SwitchView(this);
+        }
     }
 }

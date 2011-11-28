@@ -50,5 +50,10 @@ namespace CodeEngine.MK.Views.Informations
                 throw new NotImplementedException(issuer.Name+" not implemented yet!");
             }
         }
+
+        private void mnuChangeLanguage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

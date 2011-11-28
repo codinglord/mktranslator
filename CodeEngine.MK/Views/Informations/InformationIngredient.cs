@@ -63,6 +63,11 @@ namespace CodeEngine.MK.Views.Informations
 
         }
 
+        private void mnuChangeLanguage_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

@@ -32,6 +32,11 @@ namespace CodeEngine.MK.Views.Conversations
                 );
         }
 
+        private void mnuChangeLanguage_Click(object sender, EventArgs e)
+        {
+            Program.SwitchView(this);
+        }
+
     }
 
     

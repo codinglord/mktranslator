@@ -109,8 +109,23 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\ConversationAccquire.resx">
+      <DependentUpon>ConversationAccquire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\ConversationAskMap.resx">
+      <DependentUpon>ConversationAskMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\ConversationAskPrice.resx">
+      <DependentUpon>ConversationAskPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\ConversationEtc.resx">
+      <DependentUpon>ConversationEtc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Conversations\ConversationMain.resx">
       <DependentUpon>ConversationMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\ConversationRecommendMenu.resx">
+      <DependentUpon>ConversationRecommendMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Conversations\D.resx">
       <DependentUpon>D.cs</DependentUpon>
@@ -220,8 +235,14 @@
     <EmbeddedResource Include="Views\Trainings\K5.resx">
       <DependentUpon>K5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\TrainingConversationMk.resx">
+      <DependentUpon>TrainingConversationMk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Trainings\TrainingMain.resx">
       <DependentUpon>TrainingMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\TrainingMainVocaburary.resx">
+      <DependentUpon>TrainingMainVocaburary.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -15,5 +15,10 @@ namespace CodeEngine.MK.Views.Trainings
         {
             InitializeComponent();
         }
+
+        private void mnuChangeLanguage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
