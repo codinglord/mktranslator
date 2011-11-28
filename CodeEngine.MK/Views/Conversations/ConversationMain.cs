@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using CodeEngine.MK.Models;
 
 namespace CodeEngine.MK.Views.Conversations
 {
@@ -15,16 +16,25 @@ namespace CodeEngine.MK.Views.Conversations
         {
             InitializeComponent();
             langBoard.OnLanguageChange += OnLanguageChange;
+
+            OnLanguageChange();
+
+
         }
 
         private void OnLanguageChange()
-        { 
-            //Load content here!!!
-            //lblInformation.Tag = new RequestObject("lblInformation", new string[] { });
-
-            //btnInformation.Tag = new RequestObject("");
-
-            //LanguageManager.LoadText(lblInformation);
+        {
+            LanguageManager.LoadLabels(
+                new string[] { this.Name },
+                btnD,
+                btnF,
+                btnG,
+                btnH,
+                btnI,
+                btnMain,
+                lblConversation,
+                this
+            );
         }
 
         private void OnNavigate(object sender, EventArgs e)

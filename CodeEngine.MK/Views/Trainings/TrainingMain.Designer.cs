@@ -28,22 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.langBoard = new CodeEngine.MK.Views.LanguageBoard();
             this.lblInformation = new System.Windows.Forms.Label();
             this.btnMain = new System.Windows.Forms.Button();
-            this.btnConversation = new System.Windows.Forms.Button();
-            this.btnVocaburary = new System.Windows.Forms.Button();
+            this.btnK = new System.Windows.Forms.Button();
+            this.btnJ = new System.Windows.Forms.Button();
             this.mnu = new System.Windows.Forms.MainMenu();
             this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
             this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
+            this.langBoard = new CodeEngine.MK.Views.LanguageBoard();
             this.SuspendLayout();
-            // 
-            // langBoard
-            // 
-            this.langBoard.Location = new System.Drawing.Point(3, 3);
-            this.langBoard.Name = "langBoard";
-            this.langBoard.Size = new System.Drawing.Size(234, 109);
-            this.langBoard.TabIndex = 0;
             // 
             // lblInformation
             // 
@@ -61,23 +54,23 @@
             this.btnMain.Text = "btnMain";
             this.btnMain.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnConversation
+            // btnK
             // 
-            this.btnConversation.Location = new System.Drawing.Point(3, 189);
-            this.btnConversation.Name = "btnConversation";
-            this.btnConversation.Size = new System.Drawing.Size(116, 45);
-            this.btnConversation.TabIndex = 9;
-            this.btnConversation.Text = "btnConversation";
-            this.btnConversation.Click += new System.EventHandler(this.OnNavigate);
+            this.btnK.Location = new System.Drawing.Point(3, 189);
+            this.btnK.Name = "btnK";
+            this.btnK.Size = new System.Drawing.Size(116, 45);
+            this.btnK.TabIndex = 9;
+            this.btnK.Text = "btnK";
+            this.btnK.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnVocaburary
+            // btnJ
             // 
-            this.btnVocaburary.Location = new System.Drawing.Point(3, 138);
-            this.btnVocaburary.Name = "btnVocaburary";
-            this.btnVocaburary.Size = new System.Drawing.Size(116, 45);
-            this.btnVocaburary.TabIndex = 10;
-            this.btnVocaburary.Text = "btnVocaburary";
-            this.btnVocaburary.Click += new System.EventHandler(this.OnNavigate);
+            this.btnJ.Location = new System.Drawing.Point(3, 138);
+            this.btnJ.Name = "btnJ";
+            this.btnJ.Size = new System.Drawing.Size(116, 45);
+            this.btnJ.TabIndex = 10;
+            this.btnJ.Text = "btnJ";
+            this.btnJ.Click += new System.EventHandler(this.OnNavigate);
             // 
             // mnu
             // 
@@ -93,6 +86,13 @@
             this.mnuCurrentLanguage.Enabled = false;
             this.mnuCurrentLanguage.Text = " ";
             // 
+            // langBoard
+            // 
+            this.langBoard.Location = new System.Drawing.Point(3, 3);
+            this.langBoard.Name = "langBoard";
+            this.langBoard.Size = new System.Drawing.Size(234, 109);
+            this.langBoard.TabIndex = 0;
+            // 
             // TrainingMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -100,8 +100,8 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
             this.Controls.Add(this.btnMain);
-            this.Controls.Add(this.btnConversation);
-            this.Controls.Add(this.btnVocaburary);
+            this.Controls.Add(this.btnK);
+            this.Controls.Add(this.btnJ);
             this.Controls.Add(this.lblInformation);
             this.Controls.Add(this.langBoard);
             this.Menu = this.mnu;
@@ -116,8 +116,8 @@
         private LanguageBoard langBoard;
         private System.Windows.Forms.Label lblInformation;
         private System.Windows.Forms.Button btnMain;
-        private System.Windows.Forms.Button btnConversation;
-        private System.Windows.Forms.Button btnVocaburary;
+        private System.Windows.Forms.Button btnK;
+        private System.Windows.Forms.Button btnJ;
         private System.Windows.Forms.MainMenu mnu;
         private System.Windows.Forms.MenuItem mnuChangeLanguage;
         private System.Windows.Forms.MenuItem mnuCurrentLanguage;
