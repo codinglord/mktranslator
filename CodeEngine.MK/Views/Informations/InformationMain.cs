@@ -26,34 +26,29 @@ namespace CodeEngine.MK.Views.Informations
 
         }
 
-        private void OnNavigate(object sender, EventArgs e)
-        {
-            Button issuer = sender as Button;
-            if (issuer.Equals(btnAboutMK))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.InformationAboutMk);
-            }
-            else if (issuer.Equals(btnAskMember))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.InformationAskMember);
-            }
-            else if (issuer.Equals(btnIngredient))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.InformationIngredient);
-            }
-            else if (issuer.Equals(btnMain))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.Portal);
-            }
-            else
-            {
-                throw new NotImplementedException(issuer.Name+" not implemented yet!");
-            }
-        }
-
         private void mnuChangeLanguage_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void OnNavigate(object sender, EventArgs e)
+        {
+            Button btnIssue = sender as Button;
+            switch (btnIssue.Name)
+            {
+                case "btnB":
+                    Program.SwitchView(this,new B());
+                    break;
+                case "btnC":
+                    Program.SwitchView(this, new C());
+                    break;
+                case "btnE":
+                    Program.SwitchView(this, new B());
+                    break;
+                case "btnMain":
+                    Program.SwitchView(this, new E());
+                    break;
+            }
         }
     }
 }

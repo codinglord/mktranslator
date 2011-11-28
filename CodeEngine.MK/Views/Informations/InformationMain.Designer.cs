@@ -28,23 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.langBoard = new CodeEngine.MK.Views.LanguageBoard();
             this.lblInformation = new System.Windows.Forms.Label();
-            this.btnIngredient = new System.Windows.Forms.Button();
-            this.btnAboutMK = new System.Windows.Forms.Button();
-            this.btnAskMember = new System.Windows.Forms.Button();
+            this.btnB = new System.Windows.Forms.Button();
+            this.btnC = new System.Windows.Forms.Button();
+            this.btnE = new System.Windows.Forms.Button();
             this.btnMain = new System.Windows.Forms.Button();
             this.mnu = new System.Windows.Forms.MainMenu();
             this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
             this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
+            this.langBoard = new CodeEngine.MK.Views.LanguageBoard();
             this.SuspendLayout();
-            // 
-            // langBoard
-            // 
-            this.langBoard.Location = new System.Drawing.Point(3, 3);
-            this.langBoard.Name = "langBoard";
-            this.langBoard.Size = new System.Drawing.Size(234, 84);
-            this.langBoard.TabIndex = 0;
             // 
             // lblInformation
             // 
@@ -53,32 +46,32 @@
             this.lblInformation.Size = new System.Drawing.Size(100, 20);
             this.lblInformation.Text = "lblInformation";
             // 
-            // btnIngredient
+            // btnB
             // 
-            this.btnIngredient.Location = new System.Drawing.Point(25, 113);
-            this.btnIngredient.Name = "btnIngredient";
-            this.btnIngredient.Size = new System.Drawing.Size(116, 45);
-            this.btnIngredient.TabIndex = 4;
-            this.btnIngredient.Text = "btnIngredient";
-            this.btnIngredient.Click += new System.EventHandler(this.OnNavigate);
+            this.btnB.Location = new System.Drawing.Point(25, 113);
+            this.btnB.Name = "btnB";
+            this.btnB.Size = new System.Drawing.Size(116, 45);
+            this.btnB.TabIndex = 4;
+            this.btnB.Text = "btnB";
+            this.btnB.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnAboutMK
+            // btnC
             // 
-            this.btnAboutMK.Location = new System.Drawing.Point(25, 164);
-            this.btnAboutMK.Name = "btnAboutMK";
-            this.btnAboutMK.Size = new System.Drawing.Size(116, 45);
-            this.btnAboutMK.TabIndex = 4;
-            this.btnAboutMK.Text = "btnAboutMK";
-            this.btnAboutMK.Click += new System.EventHandler(this.OnNavigate);
+            this.btnC.Location = new System.Drawing.Point(25, 164);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(116, 45);
+            this.btnC.TabIndex = 4;
+            this.btnC.Text = "btnC";
+            this.btnC.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnAskMember
+            // btnE
             // 
-            this.btnAskMember.Location = new System.Drawing.Point(25, 215);
-            this.btnAskMember.Name = "btnAskMember";
-            this.btnAskMember.Size = new System.Drawing.Size(116, 45);
-            this.btnAskMember.TabIndex = 4;
-            this.btnAskMember.Text = "btnAskMember";
-            this.btnAskMember.Click += new System.EventHandler(this.OnNavigate);
+            this.btnE.Location = new System.Drawing.Point(25, 215);
+            this.btnE.Name = "btnE";
+            this.btnE.Size = new System.Drawing.Size(116, 45);
+            this.btnE.TabIndex = 4;
+            this.btnE.Text = "btnE";
+            this.btnE.Click += new System.EventHandler(this.OnNavigate);
             // 
             // btnMain
             // 
@@ -103,6 +96,13 @@
             this.mnuCurrentLanguage.Enabled = false;
             this.mnuCurrentLanguage.Text = " ";
             // 
+            // langBoard
+            // 
+            this.langBoard.Location = new System.Drawing.Point(3, 3);
+            this.langBoard.Name = "langBoard";
+            this.langBoard.Size = new System.Drawing.Size(234, 84);
+            this.langBoard.TabIndex = 0;
+            // 
             // InformationMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -110,9 +110,9 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
             this.Controls.Add(this.btnMain);
-            this.Controls.Add(this.btnAskMember);
-            this.Controls.Add(this.btnAboutMK);
-            this.Controls.Add(this.btnIngredient);
+            this.Controls.Add(this.btnE);
+            this.Controls.Add(this.btnC);
+            this.Controls.Add(this.btnB);
             this.Controls.Add(this.lblInformation);
             this.Controls.Add(this.langBoard);
             this.Menu = this.mnu;
@@ -126,9 +126,9 @@
 
         private LanguageBoard langBoard;
         private System.Windows.Forms.Label lblInformation;
-        private System.Windows.Forms.Button btnIngredient;
-        private System.Windows.Forms.Button btnAboutMK;
-        private System.Windows.Forms.Button btnAskMember;
+        private System.Windows.Forms.Button btnB;
+        private System.Windows.Forms.Button btnC;
+        private System.Windows.Forms.Button btnE;
         private System.Windows.Forms.Button btnMain;
         private System.Windows.Forms.MainMenu mnu;
         private System.Windows.Forms.MenuItem mnuChangeLanguage;

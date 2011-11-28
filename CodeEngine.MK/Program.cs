@@ -15,7 +15,7 @@ namespace CodeEngine.MK
     static class Program
     {
 
-        private static Portal _Portal;
+        internal static Portal _Portal;
         private static Stack<Form> _Forms = new Stack<Form>();
 
 
@@ -83,168 +83,25 @@ namespace CodeEngine.MK
                 case "TrainingMainVocaburary":
                     current = new TrainingMain();
                     break;
-                default:
-                    throw new InvalidOperationException("No form name were matched!");
+                case "Portal" :
+                    current = _Portal;
+                    break;
             }
-            form.Dispose();
+            if (!(current is Portal))
+            {
+                form.Dispose();
+            }
             current.Show();
         }
 
-        public static void SwitchView(SysViewer viewer)
+        public static void SwitchView(Form from, Form to)
         {
-
-            Form form = null;
-            switch (viewer)
+            if (!(from is Portal))
             {
-                case SysViewer.Portal:
-                    form = _Portal;
-                    break;
-                case SysViewer.ConversationAccquire:
-                    form = new ConversationAccquire();
-                    break;
-                case SysViewer.ConversationRecommendMenu:
-                    form = new ConversationRecommendMenu();
-                    break;
-                case SysViewer.ConversationAskMap:
-                    form = new ConversationAskMap();
-                    break;
-                case SysViewer.ConversationAskPrice:
-                    form = new ConversationAskPrice();
-                    break;
-                case SysViewer.ConversationEtc:
-                    form = new ConversationEtc();
-                    break;
-                case SysViewer.ConversationMain:
-                    form = new ConversationMain();
-                    break;
-                case SysViewer.D:
-                    form = new D();
-                    break;
-                case SysViewer.D1:
-                    form = new D1();
-                    break;
-                case SysViewer.D2:
-                    form = new D2();
-                    break;
-                case SysViewer.D3:
-                    form = new D3();
-                    break;
-                case SysViewer.D4:
-                    form = new D4();
-                    break;
-                case SysViewer.D5:
-                    form = new D5();
-                    break;
-                case SysViewer.F:
-                    form = new F();
-                    break;
-                case SysViewer.G:
-                    form = new G();
-                    break;
-                case SysViewer.G1:
-                    form = new G1();
-                    break;
-                case SysViewer.G2:
-                    form = new G2();
-                    break;
-                case SysViewer.G3:
-                    form = new G3();
-                    break;
-                case SysViewer.H:
-                    form = new H();
-                    break;
-                case SysViewer.I:
-                    form = new I();
-                    break;
-                case SysViewer.I1:
-                    form = new I1();
-                    break;
-                case SysViewer.I2:
-                    form = new I2();
-                    break;
-                case SysViewer.I3:
-                    form = new I3();
-                    break;
-                case SysViewer.I4:
-                    form = new I4();
-                    break;
-                case SysViewer.I5:
-                    form = new I5();
-                    break;
-                case SysViewer.InformationAboutMk:
-                    form = new InformationAboutMk();
-                    break;
-                case SysViewer.InformationAskMember:
-                    form = new InformationAskMember();
-                    break;
-                case SysViewer.InformationIngredient:
-                    form = new InformationIngredient();
-                    break;
-                case SysViewer.InformationMain:
-                    form = new InformationMain();
-                    break;
-                case SysViewer.J:
-                    form = new J();
-                    break;
-                case SysViewer.J1:
-                    form = new J1();
-                    break;
-                case SysViewer.J2:
-                    form = new J2();
-                    break;
-                case SysViewer.J3:
-                    form = new J3();
-                    break;
-                case SysViewer.J4:
-                    form = new J4();
-                    break;
-                case SysViewer.J5:
-                    form = new J5();
-                    break;
-                case SysViewer.K:
-                    form = new K();
-                    break;
-                case SysViewer.K1:
-                    form = new K1();
-                    break;
-                case SysViewer.K2:
-                    form = new K2();
-                    break;
-                case SysViewer.K3:
-                    form = new K3();
-                    break;
-                case SysViewer.K4:
-                    form = new K4();
-                    break;
-                case SysViewer.K5:
-                    form = new K5();
-                    break;
-                case SysViewer.TrainingConversationMk:
-                    form = new TrainingConversationMk();
-                    break;
-                case SysViewer.TrainingMain:
-                    form = new TrainingMain();
-                    break;
-                case SysViewer.TrainingMainVocaburary:
-                    form = new TrainingMainVocaburary();
-                    break;
+                from.Close();
             }
-
-            
-            if (Program._Forms.Count > 0)
-            {
-                Program._Forms.Pop().Close();
-            }
-            if (!form.Equals(Program._Portal)) //Avoid duplicate form portal.
-            {
-                Program._Forms.Push(form);
-                form.Show();
-            }
-            _Portal.Update();
-            Program.CurrentView = viewer; //Set current view.
-
+            to.Show();
         }
-
 
         /// <summary>
         /// The main entry point for the application.
@@ -286,10 +143,6 @@ namespace CodeEngine.MK
             //Application.Run(new K4());
             //Application.Run(new K5());
         }
-
-
-        
-
 
     }
 }

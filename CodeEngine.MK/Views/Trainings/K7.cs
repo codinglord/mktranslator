@@ -7,11 +7,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CodeEngine.MK.Views.Conversations
+namespace CodeEngine.MK.Views.Trainings
 {
-    public partial class ConversationAskPrice : Form
+    public partial class K7 : Form
     {
-        public ConversationAskPrice()
+        public K7()
         {
             InitializeComponent();
         }
@@ -20,5 +20,6 @@ namespace CodeEngine.MK.Views.Conversations
         {
             Program.SwitchView(this);
         }
+
     }
 }

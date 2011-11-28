@@ -69,30 +69,6 @@
     </Compile>
     <Compile Include="Models\ItemObject.cs" />
     <Compile Include="Models\RequestObject.cs" />
-    <Compile Include="Views\Conversations\ConversationAccquire.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationAccquire.Designer.cs">
-      <DependentUpon>ConversationAccquire.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationAskMap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationAskMap.Designer.cs">
-      <DependentUpon>ConversationAskMap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationAskPrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationAskPrice.Designer.cs">
-      <DependentUpon>ConversationAskPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationEtc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationEtc.Designer.cs">
-      <DependentUpon>ConversationEtc.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Conversations\ConversationMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,23 +85,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Conversations\ConversationAccquire.resx">
-      <DependentUpon>ConversationAccquire.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Conversations\ConversationAskMap.resx">
-      <DependentUpon>ConversationAskMap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Conversations\ConversationAskPrice.resx">
-      <DependentUpon>ConversationAskPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Conversations\ConversationEtc.resx">
-      <DependentUpon>ConversationEtc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\Conversations\ConversationMain.resx">
       <DependentUpon>ConversationMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Conversations\ConversationRecommendMenu.resx">
-      <DependentUpon>ConversationRecommendMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Conversations\D.resx">
       <DependentUpon>D.cs</DependentUpon>
@@ -181,14 +142,14 @@
     <EmbeddedResource Include="Views\Conversations\I5.resx">
       <DependentUpon>I5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Informations\InformationAboutMk.resx">
-      <DependentUpon>InformationAboutMk.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Informations\C.resx">
+      <DependentUpon>C.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Informations\InformationAskMember.resx">
-      <DependentUpon>InformationAskMember.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Informations\E.resx">
+      <DependentUpon>E.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Informations\InformationIngredient.resx">
-      <DependentUpon>InformationIngredient.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Informations\B.resx">
+      <DependentUpon>B.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Informations\InformationMain.resx">
       <DependentUpon>InformationMain.cs</DependentUpon>
@@ -235,24 +196,18 @@
     <EmbeddedResource Include="Views\Trainings\K5.resx">
       <DependentUpon>K5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Trainings\TrainingConversationMk.resx">
-      <DependentUpon>TrainingConversationMk.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Trainings\K6.resx">
+      <DependentUpon>K6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K7.resx">
+      <DependentUpon>K7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Trainings\TrainingMain.resx">
       <DependentUpon>TrainingMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Trainings\TrainingMainVocaburary.resx">
-      <DependentUpon>TrainingMainVocaburary.cs</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationRecommendMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Conversations\ConversationRecommendMenu.Designer.cs">
-      <DependentUpon>ConversationRecommendMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Conversations\D.cs">
       <SubType>Form</SubType>
@@ -362,23 +317,23 @@
     <Compile Include="Views\Conversations\I5.Designer.cs">
       <DependentUpon>I5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Informations\InformationAboutMk.cs">
+    <Compile Include="Views\Informations\C.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Informations\InformationAboutMk.Designer.cs">
-      <DependentUpon>InformationAboutMk.cs</DependentUpon>
+    <Compile Include="Views\Informations\C.Designer.cs">
+      <DependentUpon>C.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Informations\InformationAskMember.cs">
+    <Compile Include="Views\Informations\E.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Informations\InformationAskMember.Designer.cs">
-      <DependentUpon>InformationAskMember.cs</DependentUpon>
+    <Compile Include="Views\Informations\E.Designer.cs">
+      <DependentUpon>E.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Informations\InformationIngredient.cs">
+    <Compile Include="Views\Informations\B.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Informations\InformationIngredient.Designer.cs">
-      <DependentUpon>InformationIngredient.cs</DependentUpon>
+    <Compile Include="Views\Informations\B.Designer.cs">
+      <DependentUpon>B.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Informations\InformationMain.cs">
       <SubType>Form</SubType>
@@ -470,23 +425,23 @@
     <Compile Include="Views\Trainings\K5.Designer.cs">
       <DependentUpon>K5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Trainings\TrainingConversationMk.cs">
+    <Compile Include="Views\Trainings\K6.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Trainings\TrainingConversationMk.Designer.cs">
-      <DependentUpon>TrainingConversationMk.cs</DependentUpon>
+    <Compile Include="Views\Trainings\K6.Designer.cs">
+      <DependentUpon>K6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K7.Designer.cs">
+      <DependentUpon>K7.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Trainings\TrainingMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Trainings\TrainingMain.Designer.cs">
       <DependentUpon>TrainingMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Trainings\TrainingMainVocaburary.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Trainings\TrainingMainVocaburary.Designer.cs">
-      <DependentUpon>TrainingMainVocaburary.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -24,12 +24,11 @@ namespace CodeEngine.MK.Views.Conversations
                 "{0} [{1}]",
                 new string[] { this.Name },
                 lblHead,
-                btnDescribing,
-                btnLaw,
-                btnPlace,
-                btnPopularConversation,
-                btnSaying,
-                btnTime
+                btnI1,
+                btnI2,
+                btnI3,
+                btnI4,
+                btnI5
             );
         }
 
@@ -37,5 +36,29 @@ namespace CodeEngine.MK.Views.Conversations
         {
             Program.SwitchView(this);
         }
+
+        private void OnNavigate(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            switch (btn.Name)
+            {
+                case "btnI1" :
+                    Program.SwitchView(this, new I1());
+                    break;
+                case "btnI2":
+                    Program.SwitchView(this, new I2());
+                    break;
+                case "btnI3":
+                    Program.SwitchView(this, new I3());
+                    break;
+                case "btnI4":
+                    Program.SwitchView(this, new I4());
+                    break;
+                case "btnI5":
+                    Program.SwitchView(this, new I5());
+                    break;
+            }
+        }
+
     }
 }

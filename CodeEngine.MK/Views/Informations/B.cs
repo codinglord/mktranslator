@@ -10,11 +10,11 @@ using CodeEngine.MK.Models;
 
 namespace CodeEngine.MK.Views.Informations
 {
-    public partial class InformationIngredient : Form
+    public partial class B : Form
     {
 
 
-        public InformationIngredient()
+        public B()
         {
             InitializeComponent();
             //langBoard.OnLanguageChange += OnLanguageChange;

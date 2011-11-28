@@ -24,15 +24,20 @@ namespace CodeEngine.MK.Views.Conversations
                 "{0} [{1}]",
                 new string[] { this.Name },
                 lblHead,
-                btnAccommodation,
-                btnForOtherPlaces,
-                btnShopping
+                btnG3,
+                btnG1,
+                btnG2
                 );
         }
 
         private void mnuChangeLanguage_Click(object sender, EventArgs e)
         {
             Program.SwitchView(this);
+        }
+
+        private void OnNavigate(object sender, EventArgs e)
+        {
+
         }
     }
 }

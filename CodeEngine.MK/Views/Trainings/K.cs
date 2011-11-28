@@ -25,13 +25,13 @@ namespace CodeEngine.MK.Views.Trainings
                 "{1}",
                 new string[] { this.Name },
                 lblHead,
-                btnStep1,
-                btnStep2,
-                btnStep3,
-                btnStep4,
-                btnStep5,
-                btnStep6,
-                btnStep7
+                btnK1,
+                btnK2,
+                btnK3,
+                btnK4,
+                btnK5,
+                btnK6,
+                btnK7
                 );
 
         }
@@ -40,5 +40,35 @@ namespace CodeEngine.MK.Views.Trainings
         {
 
         }
+
+        private void OnNavigate(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            switch (btn.Name)
+            {
+                case "btnK1" :
+                    Program.SwitchView(this, new K1());
+                    break;
+                case "btnK2":
+                    Program.SwitchView(this, new K2());
+                    break;
+                case "btnK3":
+                    Program.SwitchView(this, new K3());
+                    break;
+                case "btnK4":
+                    Program.SwitchView(this, new K4());
+                    break;
+                case "btnK5":
+                    Program.SwitchView(this, new K5());
+                    break;
+                case "btnK6":
+                    Program.SwitchView(this, new K6());
+                    break;
+                case "btnK7":
+                    Program.SwitchView(this, new K7());
+                    break;
+            }
+        }
+
     }
 }
