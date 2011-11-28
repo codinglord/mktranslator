@@ -45,5 +45,10 @@ namespace CodeEngine.MK.Views.Informations
                 txtAnswer
                 );
         }
+
+        private void mnuChangeLanguage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

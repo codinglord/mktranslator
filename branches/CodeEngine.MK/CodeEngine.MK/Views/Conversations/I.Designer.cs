@@ -35,6 +35,9 @@
             this.btnDescribing = new System.Windows.Forms.Button();
             this.btnLaw = new System.Windows.Forms.Button();
             this.btnPopularConversation = new System.Windows.Forms.Button();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // btnSaying
@@ -92,12 +95,27 @@
             this.btnPopularConversation.TabIndex = 24;
             this.btnPopularConversation.Text = "btnPopularConversation";
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // I
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(240, 294);
+            this.ClientSize = new System.Drawing.Size(240, 268);
             this.Controls.Add(this.btnPopularConversation);
             this.Controls.Add(this.btnLaw);
             this.Controls.Add(this.btnDescribing);
@@ -105,6 +123,7 @@
             this.Controls.Add(this.btnPlace);
             this.Controls.Add(this.btnTime);
             this.Controls.Add(this.lblHead);
+            this.Menu = this.mnu;
             this.Name = "I";
             this.Text = "I";
             this.ResumeLayout(false);
@@ -120,5 +139,8 @@
         private System.Windows.Forms.Button btnDescribing;
         private System.Windows.Forms.Button btnLaw;
         private System.Windows.Forms.Button btnPopularConversation;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }

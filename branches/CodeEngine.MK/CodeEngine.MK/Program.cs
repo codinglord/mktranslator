@@ -30,11 +30,68 @@ namespace CodeEngine.MK
             _Portal = new Portal();
         }
 
+        public static void SwitchView(Form form)
+        {
+            Form current = null;
+            switch (form.Name)
+            {
+                /*Conversations*/
+                case "ConversationAccquire":
+                case "ConversationAskMap":
+                case "ConversationAskPrice":
+                case "ConversationEtc":
+                case "ConversationRecommendMenu":
+                case "D" :
+                case "D1":
+                case "D2":
+                case "D3":
+                case "D4":
+                case "F":
+                case "G":
+                case "G1":
+                case "G2":
+                case "G3":
+                case "H":
+                case "I":
+                case "I1":
+                case "I2":
+                case "I3":
+                case "I4":
+                case "I5":
+                    current = new ConversationMain();
+                    break;
+                /*Informations*/
+                case "InformationAboutMk":
+                case "InformationAskMember":
+                case "InformationIngredient":
+                    current = new InformationMain();
+                    break;
+                /*Trainings*/
+                case "J":
+                case "J1":
+                case "J2":
+                case "J3":
+                case "J4":
+                case "J5":
+                case "K":
+                case "K1":
+                case "K2":
+                case "K3":
+                case "K4":
+                case "K5":
+                case "TrainingConversationMk":
+                case "TrainingMainVocaburary":
+                    current = new TrainingMain();
+                    break;
+                default:
+                    throw new InvalidOperationException("No form name were matched!");
+            }
+            form.Dispose();
+            current.Show();
+        }
+
         public static void SwitchView(SysViewer viewer)
         {
-
-                //case SysViewer.Portal:
-                //    form = _Portal;
 
             Form form = null;
             switch (viewer)
@@ -48,9 +105,6 @@ namespace CodeEngine.MK
                 case SysViewer.ConversationRecommendMenu:
                     form = new ConversationRecommendMenu();
                     break;
-                //case SysViewer.ConversationAccquire:
-                //    form = new ConversationAccquire();
-                //    break;
                 case SysViewer.ConversationAskMap:
                     form = new ConversationAskMap();
                     break;
@@ -63,9 +117,6 @@ namespace CodeEngine.MK
                 case SysViewer.ConversationMain:
                     form = new ConversationMain();
                     break;
-                //case SysViewer.ConversationRecommendMenu:
-                //    form = new ConversationRecommendMenu();
-                //    break;
                 case SysViewer.D:
                     form = new D();
                     break;
@@ -189,6 +240,7 @@ namespace CodeEngine.MK
                 Program._Forms.Push(form);
                 form.Show();
             }
+            _Portal.Update();
             Program.CurrentView = viewer; //Set current view.
 
         }
@@ -200,10 +252,10 @@ namespace CodeEngine.MK
         [MTAThread]
         static void Main()
         {
-            //Application.Run(_Portal);
+            Application.Run(_Portal);
             //Application.Run(new InformationAboutMk());
             //Application.Run(new InformationAskMember());
-            Application.Run(new G1());
+            //Application.Run(new G1());
             //Application.Run(new G2());
             //Application.Run(new G3());
             //Application.Run(new J1());

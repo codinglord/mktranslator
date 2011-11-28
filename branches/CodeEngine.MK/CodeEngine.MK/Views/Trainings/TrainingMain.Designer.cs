@@ -6,7 +6,6 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.langBoard = new CodeEngine.MK.Views.LanguageBoard();
             this.lblInformation = new System.Windows.Forms.Label();
             this.btnMain = new System.Windows.Forms.Button();
             this.btnConversation = new System.Windows.Forms.Button();
             this.btnVocaburary = new System.Windows.Forms.Button();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // langBoard
@@ -78,6 +79,20 @@
             this.btnVocaburary.Text = "btnVocaburary";
             this.btnVocaburary.Click += new System.EventHandler(this.OnNavigate);
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // TrainingMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -89,7 +104,7 @@
             this.Controls.Add(this.btnVocaburary);
             this.Controls.Add(this.lblInformation);
             this.Controls.Add(this.langBoard);
-            this.Menu = this.mainMenu1;
+            this.Menu = this.mnu;
             this.Name = "TrainingMain";
             this.Text = "TrainingMain";
             this.ResumeLayout(false);
@@ -103,5 +118,8 @@
         private System.Windows.Forms.Button btnMain;
         private System.Windows.Forms.Button btnConversation;
         private System.Windows.Forms.Button btnVocaburary;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }

@@ -35,6 +35,9 @@
             this.lblSelector = new System.Windows.Forms.Label();
             this.txtAnswer = new System.Windows.Forms.TextBox();
             this.lblAnswer = new System.Windows.Forms.Label();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // txtQuestion
@@ -91,12 +94,27 @@
             this.lblAnswer.Size = new System.Drawing.Size(135, 20);
             this.lblAnswer.Text = "lblAnswer";
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // H
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(240, 294);
+            this.ClientSize = new System.Drawing.Size(257, 285);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.txtQuestion);
@@ -104,6 +122,7 @@
             this.Controls.Add(this.cmbSelector);
             this.Controls.Add(this.lblHead);
             this.Controls.Add(this.lblSelector);
+            this.Menu = this.mnu;
             this.Name = "H";
             this.Text = "PricePromotion";
             this.ResumeLayout(false);
@@ -119,5 +138,8 @@
         private System.Windows.Forms.Label lblSelector;
         private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.Label lblAnswer;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }

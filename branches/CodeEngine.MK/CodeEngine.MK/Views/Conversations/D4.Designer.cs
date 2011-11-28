@@ -84,6 +84,7 @@
             // mnuChangeLanguage
             // 
             this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
             // 
             // mnuCurrentLanguage
             // 

@@ -34,8 +34,8 @@
             this.rb_vi = new System.Windows.Forms.RadioButton();
             this.rb_ru = new System.Windows.Forms.RadioButton();
             this.rb_en = new System.Windows.Forms.RadioButton();
-            this.rb_th = new System.Windows.Forms.RadioButton();
             this.lblChoose = new System.Windows.Forms.Label();
+            this.cbTh = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // rb_zh
@@ -100,27 +100,15 @@
             // 
             // rb_en
             // 
+            this.rb_en.Checked = true;
             this.rb_en.Font = new System.Drawing.Font("Tahoma", 7F, System.Drawing.FontStyle.Regular);
             this.rb_en.Location = new System.Drawing.Point(-2, 29);
             this.rb_en.Name = "rb_en";
             this.rb_en.Size = new System.Drawing.Size(111, 20);
             this.rb_en.TabIndex = 6;
-            this.rb_en.TabStop = false;
             this.rb_en.Tag = "LanguageOption";
             this.rb_en.Text = "English อังกฤษ";
             this.rb_en.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
-            // 
-            // rb_th
-            // 
-            this.rb_th.Font = new System.Drawing.Font("Tahoma", 7F, System.Drawing.FontStyle.Regular);
-            this.rb_th.Location = new System.Drawing.Point(115, 3);
-            this.rb_th.Name = "rb_th";
-            this.rb_th.Size = new System.Drawing.Size(111, 20);
-            this.rb_th.TabIndex = 12;
-            this.rb_th.TabStop = false;
-            this.rb_th.Tag = "LanguageOption";
-            this.rb_th.Text = "Thai ภาษาไทย";
-            this.rb_th.CheckedChanged += new System.EventHandler(this.LanguageCheckedChanged);
             // 
             // lblChoose
             // 
@@ -129,12 +117,23 @@
             this.lblChoose.Size = new System.Drawing.Size(100, 20);
             this.lblChoose.Text = "Choose language";
             // 
+            // cbTh
+            // 
+            this.cbTh.Checked = true;
+            this.cbTh.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTh.Enabled = false;
+            this.cbTh.Location = new System.Drawing.Point(115, 6);
+            this.cbTh.Name = "cbTh";
+            this.cbTh.Size = new System.Drawing.Size(100, 20);
+            this.cbTh.TabIndex = 13;
+            this.cbTh.Text = "ไทย th";
+            // 
             // LanguageBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.cbTh);
             this.Controls.Add(this.lblChoose);
-            this.Controls.Add(this.rb_th);
             this.Controls.Add(this.rb_zh);
             this.Controls.Add(this.rb_ja);
             this.Controls.Add(this.rb_ko);
@@ -156,7 +155,7 @@
         private System.Windows.Forms.RadioButton rb_vi;
         private System.Windows.Forms.RadioButton rb_ru;
         private System.Windows.Forms.RadioButton rb_en;
-        private System.Windows.Forms.RadioButton rb_th;
         private System.Windows.Forms.Label lblChoose;
+        private System.Windows.Forms.CheckBox cbTh;
     }
 }
