@@ -37,7 +37,19 @@ namespace CodeEngine.MK.Views.Conversations
 
         private void OnNavigate(object sender, EventArgs e)
         {
-
+            Button btnIssue = sender as Button;
+            switch (btnIssue.Name.Replace("btn",string.Empty))
+            {
+                case "G1" :
+                    Program.SwitchView(this);
+                    break;
+                case "G2" :
+                    Program.SwitchView(this);
+                    break;
+                case "G3" :
+                    Program.SwitchView(this);
+                    break;
+            }
         }
     }
 }
