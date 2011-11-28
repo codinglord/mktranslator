@@ -20,10 +20,7 @@ namespace CodeEngine.MK.Views
             InitializeComponent();
         }
 
-
-
         public event CallbackControlChanged OnLanguageChange;
-
 
         private void LanguageCheckedChanged(object sender, EventArgs e)
         {
@@ -41,9 +38,9 @@ namespace CodeEngine.MK.Views
         {
             switch (Program.Language)
             {
-                case "th":
-                    rb_th.Checked = true;
-                    break;
+                //case "th":
+                //    rb_th.Checked = true;
+                //    break;
                 case "en":
                     rb_en.Checked = true;
                     break;

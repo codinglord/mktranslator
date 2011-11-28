@@ -6,7 +6,6 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.cmbSelector = new System.Windows.Forms.ComboBox();
             this.lblSelector = new System.Windows.Forms.Label();
             this.txtQuestion = new System.Windows.Forms.TextBox();
@@ -86,6 +84,7 @@
             // mnuChangeLanguage
             // 
             this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
             // 
             // mnuCurrentLanguage
             // 
@@ -103,7 +102,7 @@
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblHead);
-            this.Menu = this.mainMenu1;
+            this.Menu = this.mnu;
             this.Name = "I3";
             this.Text = "I3";
             this.ResumeLayout(false);

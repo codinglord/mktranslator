@@ -6,7 +6,6 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.txtAnswer = new System.Windows.Forms.TextBox();
-            this.mainMenu2 = new System.Windows.Forms.MainMenu();
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.lblAskMemberForCustomer = new System.Windows.Forms.Label();
             this.lblAskMemberForOfficer = new System.Windows.Forms.Label();
             this.lblAskMemberSelect = new System.Windows.Forms.Label();
             this.cmbSelector = new System.Windows.Forms.ComboBox();
             this.lblAskMemberInfo = new System.Windows.Forms.Label();
-            this.mainMenu3 = new System.Windows.Forms.MainMenu();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // txtAnswer
@@ -95,6 +94,21 @@
             this.lblAskMemberInfo.Size = new System.Drawing.Size(100, 20);
             this.lblAskMemberInfo.Text = "lblAskMemberInfo";
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // InformationAskMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -108,7 +122,7 @@
             this.Controls.Add(this.lblAskMemberSelect);
             this.Controls.Add(this.cmbSelector);
             this.Controls.Add(this.lblAskMemberInfo);
-            this.Menu = this.mainMenu1;
+            this.Menu = this.mnu;
             this.Name = "InformationAskMember";
             this.Text = "InformationAskMember";
             this.ResumeLayout(false);
@@ -118,13 +132,14 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtAnswer;
-        private System.Windows.Forms.MainMenu mainMenu2;
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Label lblAskMemberForCustomer;
         private System.Windows.Forms.Label lblAskMemberForOfficer;
         private System.Windows.Forms.Label lblAskMemberSelect;
         private System.Windows.Forms.ComboBox cmbSelector;
         private System.Windows.Forms.Label lblAskMemberInfo;
-        private System.Windows.Forms.MainMenu mainMenu3;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }

@@ -6,7 +6,6 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.lblHead = new System.Windows.Forms.Label();
             this.btnTime = new System.Windows.Forms.Button();
             this.btnPlace = new System.Windows.Forms.Button();
@@ -37,6 +35,9 @@
             this.btnDescribing = new System.Windows.Forms.Button();
             this.btnLaw = new System.Windows.Forms.Button();
             this.btnPopular = new System.Windows.Forms.Button();
+            this.mnu = new System.Windows.Forms.MainMenu();
+            this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
+            this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // lblHead
@@ -94,6 +95,21 @@
             this.btnPopular.TabIndex = 6;
             this.btnPopular.Text = "btnPopular";
             // 
+            // mnu
+            // 
+            this.mnu.MenuItems.Add(this.mnuChangeLanguage);
+            this.mnu.MenuItems.Add(this.mnuCurrentLanguage);
+            // 
+            // mnuChangeLanguage
+            // 
+            this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
+            // 
+            // mnuCurrentLanguage
+            // 
+            this.mnuCurrentLanguage.Enabled = false;
+            this.mnuCurrentLanguage.Text = " ";
+            // 
             // J
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -107,7 +123,7 @@
             this.Controls.Add(this.btnPlace);
             this.Controls.Add(this.btnTime);
             this.Controls.Add(this.lblHead);
-            this.Menu = this.mainMenu1;
+            this.Menu = this.mnu;
             this.Name = "J";
             this.Text = "J";
             this.ResumeLayout(false);
@@ -123,5 +139,8 @@
         private System.Windows.Forms.Button btnDescribing;
         private System.Windows.Forms.Button btnLaw;
         private System.Windows.Forms.Button btnPopular;
+        private System.Windows.Forms.MainMenu mnu;
+        private System.Windows.Forms.MenuItem mnuChangeLanguage;
+        private System.Windows.Forms.MenuItem mnuCurrentLanguage;
     }
 }

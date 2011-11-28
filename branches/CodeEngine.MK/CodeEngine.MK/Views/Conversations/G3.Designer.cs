@@ -6,7 +6,6 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,17 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.lblSelector = new System.Windows.Forms.Label();
             this.cmbSelector = new System.Windows.Forms.ComboBox();
-            this.mainMenu2 = new System.Windows.Forms.MainMenu();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblHead = new System.Windows.Forms.Label();
-            this.mainMenu3 = new System.Windows.Forms.MainMenu();
-            this.mainMenu4 = new System.Windows.Forms.MainMenu();
             this.txtQuestion = new System.Windows.Forms.TextBox();
-            this.mainMenu5 = new System.Windows.Forms.MainMenu();
-            this.mainMenu6 = new System.Windows.Forms.MainMenu();
             this.mnu = new System.Windows.Forms.MainMenu();
             this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
             this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
@@ -91,6 +84,7 @@
             // mnuChangeLanguage
             // 
             this.mnuChangeLanguage.Text = "เปลี่ยนภาษา";
+            this.mnuChangeLanguage.Click += new System.EventHandler(this.mnuChangeLanguage_Click);
             // 
             // mnuCurrentLanguage
             // 
@@ -108,7 +102,7 @@
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblHead);
             this.Controls.Add(this.txtQuestion);
-            this.Menu = this.mainMenu1;
+            this.Menu = this.mnu;
             this.Name = "G3";
             this.Text = "G3";
             this.ResumeLayout(false);
@@ -119,14 +113,9 @@
 
         private System.Windows.Forms.Label lblSelector;
         private System.Windows.Forms.ComboBox cmbSelector;
-        private System.Windows.Forms.MainMenu mainMenu2;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label lblHead;
-        private System.Windows.Forms.MainMenu mainMenu3;
-        private System.Windows.Forms.MainMenu mainMenu4;
         private System.Windows.Forms.TextBox txtQuestion;
-        private System.Windows.Forms.MainMenu mainMenu5;
-        private System.Windows.Forms.MainMenu mainMenu6;
         private System.Windows.Forms.MainMenu mnu;
         private System.Windows.Forms.MenuItem mnuChangeLanguage;
         private System.Windows.Forms.MenuItem mnuCurrentLanguage;
