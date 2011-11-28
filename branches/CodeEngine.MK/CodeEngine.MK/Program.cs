@@ -109,7 +109,7 @@ namespace CodeEngine.MK
         [MTAThread]
         static void Main()
         {
-            //Application.Run(_Portal);
+            Application.Run(_Portal);
             //Application.Run(new InformationAboutMk());
             //Application.Run(new InformationAskMember());
             //Application.Run(new G1());
@@ -143,7 +143,7 @@ namespace CodeEngine.MK
             //Application.Run(new K4());
             //Application.Run(new K5());
             //Application.Run(new K6());
-            Application.Run(new K7());
+            //Application.Run(new K7());
         }
 
     }
