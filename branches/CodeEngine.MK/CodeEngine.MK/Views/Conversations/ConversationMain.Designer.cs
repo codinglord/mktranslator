@@ -43,14 +43,14 @@
             // 
             // lblConversation
             // 
-            this.lblConversation.Location = new System.Drawing.Point(3, 110);
+            this.lblConversation.Location = new System.Drawing.Point(3, 113);
             this.lblConversation.Name = "lblConversation";
             this.lblConversation.Size = new System.Drawing.Size(100, 20);
             this.lblConversation.Text = "lblConversation";
             // 
             // btnI
             // 
-            this.btnI.Location = new System.Drawing.Point(3, 133);
+            this.btnI.Location = new System.Drawing.Point(3, 136);
             this.btnI.Name = "btnI";
             this.btnI.Size = new System.Drawing.Size(116, 37);
             this.btnI.TabIndex = 2;
@@ -59,7 +59,7 @@
             // 
             // btnD
             // 
-            this.btnD.Location = new System.Drawing.Point(3, 176);
+            this.btnD.Location = new System.Drawing.Point(3, 179);
             this.btnD.Name = "btnD";
             this.btnD.Size = new System.Drawing.Size(116, 36);
             this.btnD.TabIndex = 3;
@@ -68,7 +68,7 @@
             // 
             // btnH
             // 
-            this.btnH.Location = new System.Drawing.Point(125, 176);
+            this.btnH.Location = new System.Drawing.Point(125, 179);
             this.btnH.Name = "btnH";
             this.btnH.Size = new System.Drawing.Size(112, 36);
             this.btnH.TabIndex = 4;
@@ -77,7 +77,7 @@
             // 
             // btnF
             // 
-            this.btnF.Location = new System.Drawing.Point(125, 133);
+            this.btnF.Location = new System.Drawing.Point(125, 136);
             this.btnF.Name = "btnF";
             this.btnF.Size = new System.Drawing.Size(112, 37);
             this.btnF.TabIndex = 5;
@@ -86,7 +86,7 @@
             // 
             // btnG
             // 
-            this.btnG.Location = new System.Drawing.Point(3, 218);
+            this.btnG.Location = new System.Drawing.Point(3, 221);
             this.btnG.Name = "btnG";
             this.btnG.Size = new System.Drawing.Size(116, 36);
             this.btnG.TabIndex = 6;
@@ -95,7 +95,7 @@
             // 
             // btnMain
             // 
-            this.btnMain.Location = new System.Drawing.Point(165, 245);
+            this.btnMain.Location = new System.Drawing.Point(165, 248);
             this.btnMain.Name = "btnMain";
             this.btnMain.Size = new System.Drawing.Size(72, 20);
             this.btnMain.TabIndex = 7;
@@ -120,7 +120,7 @@
             // 
             this.langBoard.Location = new System.Drawing.Point(3, 3);
             this.langBoard.Name = "langBoard";
-            this.langBoard.Size = new System.Drawing.Size(234, 104);
+            this.langBoard.Size = new System.Drawing.Size(234, 107);
             this.langBoard.TabIndex = 0;
             // 
             // ConversationMain

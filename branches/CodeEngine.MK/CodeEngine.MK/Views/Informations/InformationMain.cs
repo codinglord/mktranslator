@@ -16,13 +16,22 @@ namespace CodeEngine.MK.Views.Informations
         {
             InitializeComponent();
             langBoard.OnLanguageChange += OnLanguageChange;
+
+            OnLanguageChange();
+
         }
 
         private void OnLanguageChange()
-        { 
-            //Load content here!!!
-            lblInformation.Tag = new RequestObject("lblInformation", new string[] { });
-            LanguageManager.LoadText(lblInformation);
+        {
+            LanguageManager.LoadLabels(
+                            new string[] { this.Name },
+                            btnB,
+                            btnC,
+                            btnE,
+                            btnMain,
+                            lblInformation,
+                            this
+                        );
 
         }
 
