@@ -1,6 +1,6 @@
-﻿namespace CodeEngine.MK.Views.Conversations
+﻿namespace CodeEngine.MK.Views.Trainings
 {
-    partial class ConversationAccquire
+    partial class K6
     {
         /// <summary>
         /// Required designer variable.
@@ -48,15 +48,15 @@
             this.mnuCurrentLanguage.Enabled = false;
             this.mnuCurrentLanguage.Text = " ";
             // 
-            // ConversationAccquire
+            // K6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
             this.Menu = this.mnu;
-            this.Name = "ConversationAccquire";
-            this.Text = "ConversationAccquire";
+            this.Name = "K6";
+            this.Text = "K6";
             this.ResumeLayout(false);
 
         }

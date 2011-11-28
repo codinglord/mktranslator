@@ -1,6 +1,6 @@
 ﻿namespace CodeEngine.MK.Views.Informations
 {
-    partial class InformationAskMember
+    partial class E
     {
         /// <summary>
         /// Required designer variable.

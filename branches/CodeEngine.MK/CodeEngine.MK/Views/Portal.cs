@@ -8,6 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 using CodeEngine.MK.Models;
 using System.Diagnostics;
+using CodeEngine.MK.Views.Informations;
+using CodeEngine.MK.Views.Conversations;
+using CodeEngine.MK.Views.Trainings;
 
 namespace CodeEngine.MK.Views
 {
@@ -41,17 +44,17 @@ namespace CodeEngine.MK.Views
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
-            Program.SwitchView(SysViewer.InformationMain);
+            Program.SwitchView(this,new InformationMain());
         }
 
         private void btnConversation_Click(object sender, EventArgs e)
         {
-            Program.SwitchView(SysViewer.ConversationMain);
+            Program.SwitchView(this,new ConversationMain());
         }
 
         private void btnTraning_Click(object sender, EventArgs e)
         {
-            Program.SwitchView(SysViewer.TrainingMain);
+            Program.SwitchView(this,new TrainingMain());
         }
 
     }

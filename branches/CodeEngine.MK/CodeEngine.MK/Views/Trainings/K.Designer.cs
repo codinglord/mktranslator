@@ -28,66 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnStep6 = new System.Windows.Forms.Button();
-            this.btnStep5 = new System.Windows.Forms.Button();
-            this.btnStep4 = new System.Windows.Forms.Button();
-            this.btnStep3 = new System.Windows.Forms.Button();
-            this.btnStep2 = new System.Windows.Forms.Button();
-            this.btnStep1 = new System.Windows.Forms.Button();
+            this.btnK6 = new System.Windows.Forms.Button();
+            this.btnK5 = new System.Windows.Forms.Button();
+            this.btnK4 = new System.Windows.Forms.Button();
+            this.btnK3 = new System.Windows.Forms.Button();
+            this.btnK2 = new System.Windows.Forms.Button();
+            this.btnK1 = new System.Windows.Forms.Button();
             this.lblHead = new System.Windows.Forms.Label();
-            this.btnStep7 = new System.Windows.Forms.Button();
+            this.btnK7 = new System.Windows.Forms.Button();
             this.mnu = new System.Windows.Forms.MainMenu();
             this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
             this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
-            // btnStep6
+            // btnK6
             // 
-            this.btnStep6.Location = new System.Drawing.Point(31, 165);
-            this.btnStep6.Name = "btnStep6";
-            this.btnStep6.Size = new System.Drawing.Size(187, 20);
-            this.btnStep6.TabIndex = 13;
-            this.btnStep6.Text = "btnStep6";
+            this.btnK6.Location = new System.Drawing.Point(31, 165);
+            this.btnK6.Name = "btnK6";
+            this.btnK6.Size = new System.Drawing.Size(187, 20);
+            this.btnK6.TabIndex = 13;
+            this.btnK6.Text = "btnK6";
+            this.btnK6.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnStep5
+            // btnK5
             // 
-            this.btnStep5.Location = new System.Drawing.Point(31, 139);
-            this.btnStep5.Name = "btnStep5";
-            this.btnStep5.Size = new System.Drawing.Size(187, 20);
-            this.btnStep5.TabIndex = 12;
-            this.btnStep5.Text = "btnStep5";
+            this.btnK5.Location = new System.Drawing.Point(31, 139);
+            this.btnK5.Name = "btnK5";
+            this.btnK5.Size = new System.Drawing.Size(187, 20);
+            this.btnK5.TabIndex = 12;
+            this.btnK5.Text = "btnK5";
+            this.btnK5.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnStep4
+            // btnK4
             // 
-            this.btnStep4.Location = new System.Drawing.Point(31, 113);
-            this.btnStep4.Name = "btnStep4";
-            this.btnStep4.Size = new System.Drawing.Size(187, 20);
-            this.btnStep4.TabIndex = 11;
-            this.btnStep4.Text = "btnStep4";
+            this.btnK4.Location = new System.Drawing.Point(31, 113);
+            this.btnK4.Name = "btnK4";
+            this.btnK4.Size = new System.Drawing.Size(187, 20);
+            this.btnK4.TabIndex = 11;
+            this.btnK4.Text = "btnK4";
+            this.btnK4.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnStep3
+            // btnK3
             // 
-            this.btnStep3.Location = new System.Drawing.Point(31, 87);
-            this.btnStep3.Name = "btnStep3";
-            this.btnStep3.Size = new System.Drawing.Size(187, 20);
-            this.btnStep3.TabIndex = 10;
-            this.btnStep3.Text = "btnStep3";
+            this.btnK3.Location = new System.Drawing.Point(31, 87);
+            this.btnK3.Name = "btnK3";
+            this.btnK3.Size = new System.Drawing.Size(187, 20);
+            this.btnK3.TabIndex = 10;
+            this.btnK3.Text = "btnK3";
+            this.btnK3.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnStep2
+            // btnK2
             // 
-            this.btnStep2.Location = new System.Drawing.Point(31, 61);
-            this.btnStep2.Name = "btnStep2";
-            this.btnStep2.Size = new System.Drawing.Size(187, 20);
-            this.btnStep2.TabIndex = 9;
-            this.btnStep2.Text = "btnStep2";
+            this.btnK2.Location = new System.Drawing.Point(31, 61);
+            this.btnK2.Name = "btnK2";
+            this.btnK2.Size = new System.Drawing.Size(187, 20);
+            this.btnK2.TabIndex = 9;
+            this.btnK2.Text = "btnK2";
+            this.btnK2.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnStep1
+            // btnK1
             // 
-            this.btnStep1.Location = new System.Drawing.Point(31, 35);
-            this.btnStep1.Name = "btnStep1";
-            this.btnStep1.Size = new System.Drawing.Size(187, 20);
-            this.btnStep1.TabIndex = 8;
-            this.btnStep1.Text = "btnStep1";
+            this.btnK1.Location = new System.Drawing.Point(31, 35);
+            this.btnK1.Name = "btnK1";
+            this.btnK1.Size = new System.Drawing.Size(187, 20);
+            this.btnK1.TabIndex = 8;
+            this.btnK1.Text = "btnK1";
+            this.btnK1.Click += new System.EventHandler(this.OnNavigate);
             // 
             // lblHead
             // 
@@ -96,13 +102,14 @@
             this.lblHead.Size = new System.Drawing.Size(100, 20);
             this.lblHead.Text = "lblHead";
             // 
-            // btnStep7
+            // btnK7
             // 
-            this.btnStep7.Location = new System.Drawing.Point(31, 191);
-            this.btnStep7.Name = "btnStep7";
-            this.btnStep7.Size = new System.Drawing.Size(187, 20);
-            this.btnStep7.TabIndex = 15;
-            this.btnStep7.Text = "btnStep7";
+            this.btnK7.Location = new System.Drawing.Point(31, 191);
+            this.btnK7.Name = "btnK7";
+            this.btnK7.Size = new System.Drawing.Size(187, 20);
+            this.btnK7.TabIndex = 15;
+            this.btnK7.Text = "btnK7";
+            this.btnK7.Click += new System.EventHandler(this.OnNavigate);
             // 
             // mnu
             // 
@@ -125,31 +132,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
-            this.Controls.Add(this.btnStep7);
-            this.Controls.Add(this.btnStep6);
-            this.Controls.Add(this.btnStep5);
-            this.Controls.Add(this.btnStep4);
-            this.Controls.Add(this.btnStep3);
-            this.Controls.Add(this.btnStep2);
-            this.Controls.Add(this.btnStep1);
+            this.Controls.Add(this.btnK7);
+            this.Controls.Add(this.btnK6);
+            this.Controls.Add(this.btnK5);
+            this.Controls.Add(this.btnK4);
+            this.Controls.Add(this.btnK3);
+            this.Controls.Add(this.btnK2);
+            this.Controls.Add(this.btnK1);
             this.Controls.Add(this.lblHead);
             this.Menu = this.mnu;
             this.Name = "K";
             this.Text = "K";
+            this.Click += new System.EventHandler(this.OnNavigate);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnStep6;
-        private System.Windows.Forms.Button btnStep5;
-        private System.Windows.Forms.Button btnStep4;
-        private System.Windows.Forms.Button btnStep3;
-        private System.Windows.Forms.Button btnStep2;
-        private System.Windows.Forms.Button btnStep1;
+        private System.Windows.Forms.Button btnK6;
+        private System.Windows.Forms.Button btnK5;
+        private System.Windows.Forms.Button btnK4;
+        private System.Windows.Forms.Button btnK3;
+        private System.Windows.Forms.Button btnK2;
+        private System.Windows.Forms.Button btnK1;
         private System.Windows.Forms.Label lblHead;
-        private System.Windows.Forms.Button btnStep7;
+        private System.Windows.Forms.Button btnK7;
         private System.Windows.Forms.MainMenu mnu;
         private System.Windows.Forms.MenuItem mnuChangeLanguage;
         private System.Windows.Forms.MenuItem mnuCurrentLanguage;

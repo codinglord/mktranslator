@@ -10,9 +10,9 @@ using CodeEngine.MK.Models;
 
 namespace CodeEngine.MK.Views.Informations
 {
-    public partial class InformationAboutMk : Form
+    public partial class E : Form
     {
-        public InformationAboutMk()
+        public E()
         {
             InitializeComponent();
             this.LoadText();
@@ -20,19 +20,19 @@ namespace CodeEngine.MK.Views.Informations
 
         private void LoadText()
         {
-            string tag = "C-เกี่ยวกับ Mk";
+            string tag = "E-สมาชิก MK";
 
-            
-            txtAboutForOfficer.Tag = new RequestObject(string.Empty, tag, "question");
-            txtAboutForCustomer.Tag = new RequestObject(string.Empty, tag, "answer");
+
+            txtQuestion.Tag = new RequestObject(string.Empty, tag, "question");
+            txtAnswer.Tag = new RequestObject(string.Empty, tag, "answer");
             cmbSelector.Tag = new RequestObject(string.Empty, tag);
 
             LanguageManager.LoadLabels(
                 new string[] { tag },
-                lblAboutForCustomer,
-                lblAboutForOfficer,
-                lblAboutInfo,
-                lblAboutSelect
+                lblAskMemberForCustomer,
+                lblAskMemberForOfficer,
+                lblAskMemberInfo,
+                lblAskMemberSelect
                 );
             LanguageManager.LoadDataToCombobox(cmbSelector);
         }
@@ -41,8 +41,8 @@ namespace CodeEngine.MK.Views.Informations
         {
             LanguageManager.LoadTextByKey(
                 ((sender as ComboBox).SelectedItem as ItemObject).ValueOfKey.ToString(),
-                txtAboutForOfficer,
-                txtAboutForCustomer
+                txtQuestion,
+                txtAnswer
                 );
         }
 
@@ -50,6 +50,5 @@ namespace CodeEngine.MK.Views.Informations
         {
 
         }
-
     }
 }
