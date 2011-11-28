@@ -41,14 +41,14 @@
             // 
             // lblInformation
             // 
-            this.lblInformation.Location = new System.Drawing.Point(3, 90);
+            this.lblInformation.Location = new System.Drawing.Point(3, 112);
             this.lblInformation.Name = "lblInformation";
             this.lblInformation.Size = new System.Drawing.Size(100, 20);
             this.lblInformation.Text = "lblInformation";
             // 
             // btnB
             // 
-            this.btnB.Location = new System.Drawing.Point(25, 113);
+            this.btnB.Location = new System.Drawing.Point(25, 135);
             this.btnB.Name = "btnB";
             this.btnB.Size = new System.Drawing.Size(116, 45);
             this.btnB.TabIndex = 4;
@@ -57,7 +57,7 @@
             // 
             // btnC
             // 
-            this.btnC.Location = new System.Drawing.Point(25, 164);
+            this.btnC.Location = new System.Drawing.Point(25, 186);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(116, 45);
             this.btnC.TabIndex = 4;
@@ -66,7 +66,7 @@
             // 
             // btnE
             // 
-            this.btnE.Location = new System.Drawing.Point(25, 215);
+            this.btnE.Location = new System.Drawing.Point(25, 237);
             this.btnE.Name = "btnE";
             this.btnE.Size = new System.Drawing.Size(116, 45);
             this.btnE.TabIndex = 4;
@@ -75,7 +75,7 @@
             // 
             // btnMain
             // 
-            this.btnMain.Location = new System.Drawing.Point(165, 240);
+            this.btnMain.Location = new System.Drawing.Point(165, 262);
             this.btnMain.Name = "btnMain";
             this.btnMain.Size = new System.Drawing.Size(72, 20);
             this.btnMain.TabIndex = 8;
@@ -100,7 +100,7 @@
             // 
             this.langBoard.Location = new System.Drawing.Point(3, 3);
             this.langBoard.Name = "langBoard";
-            this.langBoard.Size = new System.Drawing.Size(234, 84);
+            this.langBoard.Size = new System.Drawing.Size(234, 104);
             this.langBoard.TabIndex = 0;
             // 
             // InformationMain

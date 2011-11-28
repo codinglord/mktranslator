@@ -31,7 +31,8 @@ namespace CodeEngine.MK.Views.Trainings
                 btnK4,
                 btnK5,
                 btnK6,
-                btnK7
+                btnK7,
+                this
                 );
 
         }

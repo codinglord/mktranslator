@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using CodeEngine.MK.Models;
 
 namespace CodeEngine.MK.Views.Trainings
 {
@@ -15,20 +16,27 @@ namespace CodeEngine.MK.Views.Trainings
         {
             InitializeComponent();
             langBoard.OnLanguageChange += OnLanguageChange;
+
+            OnLanguageChange();
+
         }
 
         private void OnLanguageChange()
-        { 
-            //Load content here!!!
-            //lblInformation.Tag = new RequestObject("lblInformation", new string[] { });
-            //btnInformation.Tag = new RequestObject("");
-            //LanguageManager.LoadText(lblInformation);
+        {
+            LanguageManager.LoadLabels(
+                new string[] { this.Name },
+                btnJ,
+                btnK,
+                btnMain,
+                lblInformation,
+                this
+            );
 
         }
 
         private void OnNavigate(object sender, EventArgs e)
         {
-            if (sender.Equals(btnVocaburary))
+            if (sender.Equals(btnJ))
             {
                 Program.SwitchView(this, new J());
             }
@@ -36,7 +44,7 @@ namespace CodeEngine.MK.Views.Trainings
             {
                 Program.SwitchView(this, Program._Portal);
             }
-            else if (sender.Equals(btnConversation))
+            else if (sender.Equals(btnK))
             {
                 Program.SwitchView(this, new K());
             }

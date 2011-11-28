@@ -36,6 +36,8 @@
             this.mnu = new System.Windows.Forms.MainMenu();
             this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
             this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
+            this.txtRead = new System.Windows.Forms.TextBox();
+            this.lblRead = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbSelector
@@ -91,12 +93,30 @@
             this.mnuCurrentLanguage.Enabled = false;
             this.mnuCurrentLanguage.Text = " ";
             // 
+            // txtRead
+            // 
+            this.txtRead.Location = new System.Drawing.Point(4, 201);
+            this.txtRead.Multiline = true;
+            this.txtRead.Name = "txtRead";
+            this.txtRead.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtRead.Size = new System.Drawing.Size(233, 75);
+            this.txtRead.TabIndex = 62;
+            // 
+            // lblRead
+            // 
+            this.lblRead.Location = new System.Drawing.Point(4, 178);
+            this.lblRead.Name = "lblRead";
+            this.lblRead.Size = new System.Drawing.Size(135, 20);
+            this.lblRead.Text = "lblRead";
+            // 
             // K1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
+            this.Controls.Add(this.txtRead);
+            this.Controls.Add(this.lblRead);
             this.Controls.Add(this.cmbSelector);
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.lblHead);
@@ -119,5 +139,7 @@
         private System.Windows.Forms.MainMenu mnu;
         private System.Windows.Forms.MenuItem mnuChangeLanguage;
         private System.Windows.Forms.MenuItem mnuCurrentLanguage;
+        private System.Windows.Forms.TextBox txtRead;
+        private System.Windows.Forms.Label lblRead;
     }
 }

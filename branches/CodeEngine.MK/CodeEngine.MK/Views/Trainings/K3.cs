@@ -28,13 +28,16 @@ namespace CodeEngine.MK.Views.Trainings
             {
                 FixLanguage = Program.FixLanguage
             };
+            txtRead.Tag = new RequestObject("karaoke", tag);
             cmbSelector.Tag = new RequestObject(string.Empty, tag);
 
             LanguageManager.LoadLabels(
-                new string[] { tag },
+                new string[] { this.Name },
                 lblHead,
                 lblQuestion,
-                lblSelector
+                lblSelector,
+                lblRead,
+                this
                 );
             LanguageManager.LoadDataToCombobox(cmbSelector);
         }
@@ -43,7 +46,8 @@ namespace CodeEngine.MK.Views.Trainings
         {
             LanguageManager.LoadTextByKey(
                 ((sender as ComboBox).SelectedItem as ItemObject).ValueOfKey.ToString(),
-                txtQuestion
+                txtQuestion,
+                txtRead
                 );
         }
 

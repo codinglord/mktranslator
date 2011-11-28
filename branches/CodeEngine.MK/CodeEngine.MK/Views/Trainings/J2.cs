@@ -31,10 +31,11 @@ namespace CodeEngine.MK.Views.Trainings
             cmbSelector.Tag = new RequestObject(string.Empty, tag, "question");
 
             LanguageManager.LoadLabels(
-                new string[] { tag },
+                new string[] { this.Name },
                 lblHead,
                 lblQuestion,
-                lblSelector
+                lblSelector,
+                this
                 );
             LanguageManager.LoadDataToCombobox(cmbSelector);
         }
