@@ -1,6 +1,6 @@
 ﻿namespace CodeEngine.MK.Views.Informations
 {
-    partial class InformationIngredient
+    partial class B
     {
         /// <summary>
         /// Required designer variable.

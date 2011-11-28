@@ -25,20 +25,50 @@ namespace CodeEngine.MK.Views.Trainings
                 "{0} [{1}]",
                 new string[] { this.Name },
                 lblHead,
-                btnDescribing,
-                btnLaw,
-                btnPlace,
-                btnPopular,
-                btnSayingWord,
-                btnTime
+                btnJ1,
+                btnJ2,
+                btnJ3,
+                btnJ4,
+                btnJ5
                 );
 
         }
 
         private void mnuChangeLanguage_Click(object sender, EventArgs e)
         {
+            Program.SwitchView(this);
+        }
+
+        private void btnTime_Click(object sender, EventArgs e)
+        {
 
         }
+
+        private void OnNavigate(object sender, EventArgs e)
+        {
+
+            Button btn = sender as Button;
+            switch (btn.Name)
+            {
+                case "btnJ1":
+                    Program.SwitchView(this, new J1());
+                    break;
+                case "btnJ2":
+                    Program.SwitchView(this, new J2());
+                    break;
+                case "btnJ3":
+                    Program.SwitchView(this, new J3());
+                    break;
+                case "btnJ4":
+                    Program.SwitchView(this, new J4());
+                    break;
+                case "btnJ5":
+                    Program.SwitchView(this, new J5());
+                    break;
+            }
+        }
+
+
 
 
 

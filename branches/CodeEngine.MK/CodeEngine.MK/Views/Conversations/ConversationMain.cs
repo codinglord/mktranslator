@@ -30,33 +30,26 @@ namespace CodeEngine.MK.Views.Conversations
         private void OnNavigate(object sender, EventArgs e)
         {
             Button issuer = sender as Button;
-            if (issuer.Equals(btnAccquire))
+            switch (issuer.Name)
             {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationAccquire);
-            }
-            else if (issuer.Equals(btnAskMap))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationAskMap);
-            }
-            else if (issuer.Equals(btnAskPrice))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationAskPrice);
-            }
-            else if (issuer.Equals(btnConversationEtc))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationEtc);
-            }
-            else if (issuer.Equals(btnMain))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.Portal);
-            }
-            else if (issuer.Equals(btnRecommendMenu))
-            {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.ConversationRecommendMenu);
-            }
-            else
-            {
-                throw new NotImplementedException(issuer.Name);
+                case "btnI" :
+                    Program.SwitchView(this,new I());
+                    break;
+                case "btnD":
+                    Program.SwitchView(this, new D());
+                    break;
+                case "btnG":
+                    Program.SwitchView(this, new G());
+                    break;
+                case "btnF":
+                    Program.SwitchView(this, new F());
+                    break;
+                case "btnH":
+                    Program.SwitchView(this, new H());
+                    break;
+                case "btnMain":
+                    Program.SwitchView(this, Program._Portal);
+                    break;
             }
 
         }

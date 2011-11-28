@@ -30,15 +30,15 @@ namespace CodeEngine.MK.Views.Trainings
         {
             if (sender.Equals(btnVocaburary))
             {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.J);
+                Program.SwitchView(this, new J());
             }
             else if (sender.Equals(btnMain))
             {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.Portal);
+                Program.SwitchView(this, Program._Portal);
             }
             else if (sender.Equals(btnConversation))
             {
-                Program.SwitchView(CodeEngine.MK.Models.SysViewer.K);
+                Program.SwitchView(this, new K());
             }
             else
             {

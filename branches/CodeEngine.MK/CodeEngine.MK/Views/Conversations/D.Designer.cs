@@ -28,56 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAccident = new System.Windows.Forms.Button();
-            this.btnSuggestionStore = new System.Windows.Forms.Button();
-            this.btnAboutService = new System.Windows.Forms.Button();
-            this.btnSuggestedPrice = new System.Windows.Forms.Button();
-            this.btnAboutProduct = new System.Windows.Forms.Button();
+            this.btnD5 = new System.Windows.Forms.Button();
+            this.btnD4 = new System.Windows.Forms.Button();
+            this.btnD3 = new System.Windows.Forms.Button();
+            this.btnD2 = new System.Windows.Forms.Button();
+            this.btnD1 = new System.Windows.Forms.Button();
             this.lblHead = new System.Windows.Forms.Label();
             this.mnu = new System.Windows.Forms.MainMenu();
             this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
             this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
-            // btnAccident
+            // btnD5
             // 
-            this.btnAccident.Location = new System.Drawing.Point(31, 137);
-            this.btnAccident.Name = "btnAccident";
-            this.btnAccident.Size = new System.Drawing.Size(187, 20);
-            this.btnAccident.TabIndex = 12;
-            this.btnAccident.Text = "btnAccident";
+            this.btnD5.Location = new System.Drawing.Point(31, 137);
+            this.btnD5.Name = "btnD5";
+            this.btnD5.Size = new System.Drawing.Size(187, 20);
+            this.btnD5.TabIndex = 12;
+            this.btnD5.Text = "btnD5";
+            this.btnD5.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnSuggestionStore
+            // btnD4
             // 
-            this.btnSuggestionStore.Location = new System.Drawing.Point(31, 111);
-            this.btnSuggestionStore.Name = "btnSuggestionStore";
-            this.btnSuggestionStore.Size = new System.Drawing.Size(187, 20);
-            this.btnSuggestionStore.TabIndex = 11;
-            this.btnSuggestionStore.Text = "btnSuggestionStore";
+            this.btnD4.Location = new System.Drawing.Point(31, 111);
+            this.btnD4.Name = "btnD4";
+            this.btnD4.Size = new System.Drawing.Size(187, 20);
+            this.btnD4.TabIndex = 11;
+            this.btnD4.Text = "btnD4";
+            this.btnD4.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnAboutService
+            // btnD3
             // 
-            this.btnAboutService.Location = new System.Drawing.Point(31, 85);
-            this.btnAboutService.Name = "btnAboutService";
-            this.btnAboutService.Size = new System.Drawing.Size(187, 20);
-            this.btnAboutService.TabIndex = 10;
-            this.btnAboutService.Text = "btnAboutService";
+            this.btnD3.Location = new System.Drawing.Point(31, 85);
+            this.btnD3.Name = "btnD3";
+            this.btnD3.Size = new System.Drawing.Size(187, 20);
+            this.btnD3.TabIndex = 10;
+            this.btnD3.Text = "btnD3";
+            this.btnD3.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnSuggestedPrice
+            // btnD2
             // 
-            this.btnSuggestedPrice.Location = new System.Drawing.Point(31, 59);
-            this.btnSuggestedPrice.Name = "btnSuggestedPrice";
-            this.btnSuggestedPrice.Size = new System.Drawing.Size(187, 20);
-            this.btnSuggestedPrice.TabIndex = 9;
-            this.btnSuggestedPrice.Text = "btnSuggestedPrice";
+            this.btnD2.Location = new System.Drawing.Point(31, 59);
+            this.btnD2.Name = "btnD2";
+            this.btnD2.Size = new System.Drawing.Size(187, 20);
+            this.btnD2.TabIndex = 9;
+            this.btnD2.Text = "btnD2";
+            this.btnD2.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnAboutProduct
+            // btnD1
             // 
-            this.btnAboutProduct.Location = new System.Drawing.Point(31, 33);
-            this.btnAboutProduct.Name = "btnAboutProduct";
-            this.btnAboutProduct.Size = new System.Drawing.Size(187, 20);
-            this.btnAboutProduct.TabIndex = 8;
-            this.btnAboutProduct.Text = "btnAboutProduct";
+            this.btnD1.Location = new System.Drawing.Point(31, 33);
+            this.btnD1.Name = "btnD1";
+            this.btnD1.Size = new System.Drawing.Size(187, 20);
+            this.btnD1.TabIndex = 8;
+            this.btnD1.Text = "btnD1";
+            this.btnD1.Click += new System.EventHandler(this.OnNavigate);
             // 
             // lblHead
             // 
@@ -107,11 +112,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
-            this.Controls.Add(this.btnAccident);
-            this.Controls.Add(this.btnSuggestionStore);
-            this.Controls.Add(this.btnAboutService);
-            this.Controls.Add(this.btnSuggestedPrice);
-            this.Controls.Add(this.btnAboutProduct);
+            this.Controls.Add(this.btnD5);
+            this.Controls.Add(this.btnD4);
+            this.Controls.Add(this.btnD3);
+            this.Controls.Add(this.btnD2);
+            this.Controls.Add(this.btnD1);
             this.Controls.Add(this.lblHead);
             this.Menu = this.mnu;
             this.Name = "D";
@@ -122,11 +127,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnAccident;
-        private System.Windows.Forms.Button btnSuggestionStore;
-        private System.Windows.Forms.Button btnAboutService;
-        private System.Windows.Forms.Button btnSuggestedPrice;
-        private System.Windows.Forms.Button btnAboutProduct;
+        private System.Windows.Forms.Button btnD5;
+        private System.Windows.Forms.Button btnD4;
+        private System.Windows.Forms.Button btnD3;
+        private System.Windows.Forms.Button btnD2;
+        private System.Windows.Forms.Button btnD1;
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.MainMenu mnu;
         private System.Windows.Forms.MenuItem mnuChangeLanguage;

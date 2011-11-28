@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.lblHead = new System.Windows.Forms.Label();
-            this.btnTime = new System.Windows.Forms.Button();
-            this.btnPlace = new System.Windows.Forms.Button();
-            this.btnSayingWord = new System.Windows.Forms.Button();
-            this.btnDescribing = new System.Windows.Forms.Button();
-            this.btnLaw = new System.Windows.Forms.Button();
-            this.btnPopular = new System.Windows.Forms.Button();
+            this.btnJ1 = new System.Windows.Forms.Button();
+            this.btnJ2 = new System.Windows.Forms.Button();
+            this.btnJ3 = new System.Windows.Forms.Button();
+            this.btnJ4 = new System.Windows.Forms.Button();
+            this.btnJ5 = new System.Windows.Forms.Button();
             this.mnu = new System.Windows.Forms.MainMenu();
             this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
             this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
@@ -47,53 +46,50 @@
             this.lblHead.Size = new System.Drawing.Size(100, 20);
             this.lblHead.Text = "lblHead";
             // 
-            // btnTime
+            // btnJ1
             // 
-            this.btnTime.Location = new System.Drawing.Point(31, 33);
-            this.btnTime.Name = "btnTime";
-            this.btnTime.Size = new System.Drawing.Size(187, 20);
-            this.btnTime.TabIndex = 1;
-            this.btnTime.Text = "btnTime";
+            this.btnJ1.Location = new System.Drawing.Point(31, 33);
+            this.btnJ1.Name = "btnJ1";
+            this.btnJ1.Size = new System.Drawing.Size(187, 20);
+            this.btnJ1.TabIndex = 1;
+            this.btnJ1.Text = "btnJ1";
+            this.btnJ1.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnPlace
+            // btnJ2
             // 
-            this.btnPlace.Location = new System.Drawing.Point(31, 59);
-            this.btnPlace.Name = "btnPlace";
-            this.btnPlace.Size = new System.Drawing.Size(187, 20);
-            this.btnPlace.TabIndex = 2;
-            this.btnPlace.Text = "btnPlace";
+            this.btnJ2.Location = new System.Drawing.Point(31, 59);
+            this.btnJ2.Name = "btnJ2";
+            this.btnJ2.Size = new System.Drawing.Size(187, 20);
+            this.btnJ2.TabIndex = 2;
+            this.btnJ2.Text = "btnJ2";
+            this.btnJ2.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnSayingWord
+            // btnJ3
             // 
-            this.btnSayingWord.Location = new System.Drawing.Point(31, 85);
-            this.btnSayingWord.Name = "btnSayingWord";
-            this.btnSayingWord.Size = new System.Drawing.Size(187, 20);
-            this.btnSayingWord.TabIndex = 3;
-            this.btnSayingWord.Text = "btnSayingWord";
+            this.btnJ3.Location = new System.Drawing.Point(31, 85);
+            this.btnJ3.Name = "btnJ3";
+            this.btnJ3.Size = new System.Drawing.Size(187, 20);
+            this.btnJ3.TabIndex = 3;
+            this.btnJ3.Text = "btnJ3";
+            this.btnJ3.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnDescribing
+            // btnJ4
             // 
-            this.btnDescribing.Location = new System.Drawing.Point(31, 111);
-            this.btnDescribing.Name = "btnDescribing";
-            this.btnDescribing.Size = new System.Drawing.Size(187, 20);
-            this.btnDescribing.TabIndex = 4;
-            this.btnDescribing.Text = "btnDescribing";
+            this.btnJ4.Location = new System.Drawing.Point(31, 111);
+            this.btnJ4.Name = "btnJ4";
+            this.btnJ4.Size = new System.Drawing.Size(187, 20);
+            this.btnJ4.TabIndex = 4;
+            this.btnJ4.Text = "btnJ4";
+            this.btnJ4.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnLaw
+            // btnJ5
             // 
-            this.btnLaw.Location = new System.Drawing.Point(31, 137);
-            this.btnLaw.Name = "btnLaw";
-            this.btnLaw.Size = new System.Drawing.Size(187, 20);
-            this.btnLaw.TabIndex = 5;
-            this.btnLaw.Text = "btnLaw";
-            // 
-            // btnPopular
-            // 
-            this.btnPopular.Location = new System.Drawing.Point(31, 163);
-            this.btnPopular.Name = "btnPopular";
-            this.btnPopular.Size = new System.Drawing.Size(187, 20);
-            this.btnPopular.TabIndex = 6;
-            this.btnPopular.Text = "btnPopular";
+            this.btnJ5.Location = new System.Drawing.Point(31, 137);
+            this.btnJ5.Name = "btnJ5";
+            this.btnJ5.Size = new System.Drawing.Size(187, 20);
+            this.btnJ5.TabIndex = 5;
+            this.btnJ5.Text = "btnJ5";
+            this.btnJ5.Click += new System.EventHandler(this.OnNavigate);
             // 
             // mnu
             // 
@@ -116,12 +112,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
-            this.Controls.Add(this.btnPopular);
-            this.Controls.Add(this.btnLaw);
-            this.Controls.Add(this.btnDescribing);
-            this.Controls.Add(this.btnSayingWord);
-            this.Controls.Add(this.btnPlace);
-            this.Controls.Add(this.btnTime);
+            this.Controls.Add(this.btnJ5);
+            this.Controls.Add(this.btnJ4);
+            this.Controls.Add(this.btnJ3);
+            this.Controls.Add(this.btnJ2);
+            this.Controls.Add(this.btnJ1);
             this.Controls.Add(this.lblHead);
             this.Menu = this.mnu;
             this.Name = "J";
@@ -133,12 +128,11 @@
         #endregion
 
         private System.Windows.Forms.Label lblHead;
-        private System.Windows.Forms.Button btnTime;
-        private System.Windows.Forms.Button btnPlace;
-        private System.Windows.Forms.Button btnSayingWord;
-        private System.Windows.Forms.Button btnDescribing;
-        private System.Windows.Forms.Button btnLaw;
-        private System.Windows.Forms.Button btnPopular;
+        private System.Windows.Forms.Button btnJ1;
+        private System.Windows.Forms.Button btnJ2;
+        private System.Windows.Forms.Button btnJ3;
+        private System.Windows.Forms.Button btnJ4;
+        private System.Windows.Forms.Button btnJ5;
         private System.Windows.Forms.MainMenu mnu;
         private System.Windows.Forms.MenuItem mnuChangeLanguage;
         private System.Windows.Forms.MenuItem mnuCurrentLanguage;

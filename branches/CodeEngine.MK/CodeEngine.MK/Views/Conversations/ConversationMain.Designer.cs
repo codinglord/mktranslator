@@ -28,25 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.langBoard = new CodeEngine.MK.Views.LanguageBoard();
             this.lblConversation = new System.Windows.Forms.Label();
-            this.btnConversationEtc = new System.Windows.Forms.Button();
-            this.btnAccquire = new System.Windows.Forms.Button();
-            this.btnAskMap = new System.Windows.Forms.Button();
-            this.btnRecommendMenu = new System.Windows.Forms.Button();
-            this.btnAskPrice = new System.Windows.Forms.Button();
+            this.btnI = new System.Windows.Forms.Button();
+            this.btnD = new System.Windows.Forms.Button();
+            this.btnH = new System.Windows.Forms.Button();
+            this.btnF = new System.Windows.Forms.Button();
+            this.btnG = new System.Windows.Forms.Button();
             this.btnMain = new System.Windows.Forms.Button();
             this.mnu = new System.Windows.Forms.MainMenu();
             this.mnuChangeLanguage = new System.Windows.Forms.MenuItem();
             this.mnuCurrentLanguage = new System.Windows.Forms.MenuItem();
+            this.langBoard = new CodeEngine.MK.Views.LanguageBoard();
             this.SuspendLayout();
-            // 
-            // langBoard
-            // 
-            this.langBoard.Location = new System.Drawing.Point(3, 3);
-            this.langBoard.Name = "langBoard";
-            this.langBoard.Size = new System.Drawing.Size(234, 104);
-            this.langBoard.TabIndex = 0;
             // 
             // lblConversation
             // 
@@ -55,50 +48,50 @@
             this.lblConversation.Size = new System.Drawing.Size(100, 20);
             this.lblConversation.Text = "lblConversation";
             // 
-            // btnConversationEtc
+            // btnI
             // 
-            this.btnConversationEtc.Location = new System.Drawing.Point(3, 133);
-            this.btnConversationEtc.Name = "btnConversationEtc";
-            this.btnConversationEtc.Size = new System.Drawing.Size(116, 37);
-            this.btnConversationEtc.TabIndex = 2;
-            this.btnConversationEtc.Text = "btnConversationEtc";
-            this.btnConversationEtc.Click += new System.EventHandler(this.OnNavigate);
+            this.btnI.Location = new System.Drawing.Point(3, 133);
+            this.btnI.Name = "btnI";
+            this.btnI.Size = new System.Drawing.Size(116, 37);
+            this.btnI.TabIndex = 2;
+            this.btnI.Text = "btnI";
+            this.btnI.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnAccquire
+            // btnD
             // 
-            this.btnAccquire.Location = new System.Drawing.Point(3, 176);
-            this.btnAccquire.Name = "btnAccquire";
-            this.btnAccquire.Size = new System.Drawing.Size(116, 36);
-            this.btnAccquire.TabIndex = 3;
-            this.btnAccquire.Text = "btnAccquire";
-            this.btnAccquire.Click += new System.EventHandler(this.OnNavigate);
+            this.btnD.Location = new System.Drawing.Point(3, 176);
+            this.btnD.Name = "btnD";
+            this.btnD.Size = new System.Drawing.Size(116, 36);
+            this.btnD.TabIndex = 3;
+            this.btnD.Text = "btnD";
+            this.btnD.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnAskMap
+            // btnH
             // 
-            this.btnAskMap.Location = new System.Drawing.Point(125, 176);
-            this.btnAskMap.Name = "btnAskMap";
-            this.btnAskMap.Size = new System.Drawing.Size(112, 36);
-            this.btnAskMap.TabIndex = 4;
-            this.btnAskMap.Text = "btnAskMap";
-            this.btnAskMap.Click += new System.EventHandler(this.OnNavigate);
+            this.btnH.Location = new System.Drawing.Point(125, 176);
+            this.btnH.Name = "btnH";
+            this.btnH.Size = new System.Drawing.Size(112, 36);
+            this.btnH.TabIndex = 4;
+            this.btnH.Text = "btnH";
+            this.btnH.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnRecommendMenu
+            // btnF
             // 
-            this.btnRecommendMenu.Location = new System.Drawing.Point(125, 133);
-            this.btnRecommendMenu.Name = "btnRecommendMenu";
-            this.btnRecommendMenu.Size = new System.Drawing.Size(112, 37);
-            this.btnRecommendMenu.TabIndex = 5;
-            this.btnRecommendMenu.Text = "btnRecommendMenu";
-            this.btnRecommendMenu.Click += new System.EventHandler(this.OnNavigate);
+            this.btnF.Location = new System.Drawing.Point(125, 133);
+            this.btnF.Name = "btnF";
+            this.btnF.Size = new System.Drawing.Size(112, 37);
+            this.btnF.TabIndex = 5;
+            this.btnF.Text = "btnF";
+            this.btnF.Click += new System.EventHandler(this.OnNavigate);
             // 
-            // btnAskPrice
+            // btnG
             // 
-            this.btnAskPrice.Location = new System.Drawing.Point(3, 218);
-            this.btnAskPrice.Name = "btnAskPrice";
-            this.btnAskPrice.Size = new System.Drawing.Size(116, 36);
-            this.btnAskPrice.TabIndex = 6;
-            this.btnAskPrice.Text = "btnAskPrice";
-            this.btnAskPrice.Click += new System.EventHandler(this.OnNavigate);
+            this.btnG.Location = new System.Drawing.Point(3, 218);
+            this.btnG.Name = "btnG";
+            this.btnG.Size = new System.Drawing.Size(116, 36);
+            this.btnG.TabIndex = 6;
+            this.btnG.Text = "btnG";
+            this.btnG.Click += new System.EventHandler(this.OnNavigate);
             // 
             // btnMain
             // 
@@ -123,6 +116,13 @@
             this.mnuCurrentLanguage.Enabled = false;
             this.mnuCurrentLanguage.Text = " ";
             // 
+            // langBoard
+            // 
+            this.langBoard.Location = new System.Drawing.Point(3, 3);
+            this.langBoard.Name = "langBoard";
+            this.langBoard.Size = new System.Drawing.Size(234, 104);
+            this.langBoard.TabIndex = 0;
+            // 
             // ConversationMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -130,11 +130,11 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
             this.Controls.Add(this.btnMain);
-            this.Controls.Add(this.btnAskPrice);
-            this.Controls.Add(this.btnRecommendMenu);
-            this.Controls.Add(this.btnAskMap);
-            this.Controls.Add(this.btnAccquire);
-            this.Controls.Add(this.btnConversationEtc);
+            this.Controls.Add(this.btnG);
+            this.Controls.Add(this.btnF);
+            this.Controls.Add(this.btnH);
+            this.Controls.Add(this.btnD);
+            this.Controls.Add(this.btnI);
             this.Controls.Add(this.lblConversation);
             this.Controls.Add(this.langBoard);
             this.Menu = this.mnu;
@@ -148,11 +148,11 @@
 
         private LanguageBoard langBoard;
         private System.Windows.Forms.Label lblConversation;
-        private System.Windows.Forms.Button btnConversationEtc;
-        private System.Windows.Forms.Button btnAccquire;
-        private System.Windows.Forms.Button btnAskMap;
-        private System.Windows.Forms.Button btnRecommendMenu;
-        private System.Windows.Forms.Button btnAskPrice;
+        private System.Windows.Forms.Button btnI;
+        private System.Windows.Forms.Button btnD;
+        private System.Windows.Forms.Button btnH;
+        private System.Windows.Forms.Button btnF;
+        private System.Windows.Forms.Button btnG;
         private System.Windows.Forms.Button btnMain;
         private System.Windows.Forms.MainMenu mnu;
         private System.Windows.Forms.MenuItem mnuChangeLanguage;
