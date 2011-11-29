@@ -23,6 +23,7 @@ namespace CodeEngine.MK.Models
             _Cached = _Adapter.GetData();
         }
 
+
         [Obsolete()]
         public static void LoadText(List<LanguageMapper> mappers)
         {
