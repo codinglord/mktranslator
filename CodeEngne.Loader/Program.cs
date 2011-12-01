@@ -14,9 +14,7 @@ namespace CodeEngne.Loader
     {
         static void Main(string[] args)
         {
-
             LoadExcel();
-
         }
 
         public static void LoadExcel()
@@ -54,6 +52,11 @@ namespace CodeEngne.Loader
                         );
 
                         tbl.Load(cmd.ExecuteReader());
+                        DataRow[] iNullKeys = tbl.Select("Key is null", string.Empty);
+                        foreach (DataRow j in iNullKeys)
+                        {
+                            tbl.Rows.Remove(j);
+                        }
                         int indexOfSQLBATCH = tbl.Columns.IndexOf("SQL BATCH");
                         if (indexOfSQLBATCH > -1)
                         {
