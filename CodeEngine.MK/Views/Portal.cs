@@ -23,7 +23,7 @@ namespace CodeEngine.MK.Views
 
 
             langBoard.OnLanguageChange += OnLanguageChange;
-
+            
         }
 
         private void OnLanguageChange()

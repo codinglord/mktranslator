@@ -70,7 +70,7 @@
             this.btnTraning.Text = "Traning";
             this.btnTraning.Click += new System.EventHandler(this.btnTraning_Click);
             // 
-            // MainInformation
+            // Portal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -81,7 +81,7 @@
             this.Controls.Add(this.btnInformation);
             this.Controls.Add(this.langBoard);
             this.Menu = this.mainMenu1;
-            this.Name = "MainInformation";
+            this.Name = "Portal";
             this.Text = "Information";
             this.Load += new System.EventHandler(this.MainInformation_Load);
             this.ResumeLayout(false);

@@ -24,6 +24,26 @@ namespace CodeEngine.MK
         public const string FixLanguage = "th";
         public static string[] ZeroArrayString = new string[] { };
 
+        public static void EnhanceCopy(Control ctrl)
+        {
+            foreach (Control i in ctrl.Controls)
+            {
+                if (i is TextBox)
+                {
+                    TextBox iTextBox = i as TextBox;
+                    iTextBox.ContextMenu = new ContextMenu();
+                    iTextBox.ContextMenu.Popup += new EventHandler(delegate(object o, EventArgs e)
+                    {
+                        Clipboard.SetDataObject((o as ContextMenu).SourceControl.Text.Trim());
+                    });
+                }
+                else if (i.Controls.Count > 0)
+                {
+                    Program.EnhanceCopy(i);
+                }
+            }
+        }
+
         static Program()
         {
             Program.Language = "en";
@@ -98,7 +118,13 @@ namespace CodeEngine.MK
         {
             if (!(from is Portal))
             {
+<<<<<<< .mine
+                Program._Forms.Push(form);
+                Program.EnhanceCopy(form);
+                form.Show();
+=======
                 from.Close();
+>>>>>>> .r35
             }
             to.Show();
         }
