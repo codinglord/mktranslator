@@ -1,0 +1,483 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DC7AB4C-6C57-4CA6-8A33-DF335FB5CF6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeEngine.MK</RootNamespace>
+    <AssemblyName>CodeEngine.MK</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>4118C335-430C-497f-BE48-11C3316B135E</PlatformID>
+    <OSVersion>5.1</OSVersion>
+    <DeployDirSuffix>CodeEngine.MK</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 5.0 Pocket PC SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\AppDBDataSet.cs">
+      <DependentUpon>AppDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\AppDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ItemObject.cs" />
+    <Compile Include="Models\RequestObject.cs" />
+    <Compile Include="Views\Conversations\ConversationMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\ConversationMain.Designer.cs">
+      <DependentUpon>ConversationMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LanguageManager.cs" />
+    <Compile Include="Models\LanguageMapper.cs" />
+    <Compile Include="Models\SysViewer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\ConversationMain.resx">
+      <DependentUpon>ConversationMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D.resx">
+      <DependentUpon>D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D1.resx">
+      <DependentUpon>D1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D2.resx">
+      <DependentUpon>D2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D3.resx">
+      <DependentUpon>D3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D4.resx">
+      <DependentUpon>D4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\D5.resx">
+      <DependentUpon>D5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\F.resx">
+      <DependentUpon>F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\G.resx">
+      <DependentUpon>G.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\G1.resx">
+      <DependentUpon>G1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\G2.resx">
+      <DependentUpon>G2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\G3.resx">
+      <DependentUpon>G3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\H.resx">
+      <DependentUpon>H.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\I.resx">
+      <DependentUpon>I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\I1.resx">
+      <DependentUpon>I1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\I2.resx">
+      <DependentUpon>I2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\I3.resx">
+      <DependentUpon>I3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\I4.resx">
+      <DependentUpon>I4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Conversations\I5.resx">
+      <DependentUpon>I5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Informations\C.resx">
+      <DependentUpon>C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Informations\E.resx">
+      <DependentUpon>E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Informations\B.resx">
+      <DependentUpon>B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Informations\InformationMain.resx">
+      <DependentUpon>InformationMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Shares\LanguageBoard.resx">
+      <DependentUpon>LanguageBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Portal.resx">
+      <DependentUpon>Portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J.resx">
+      <DependentUpon>J.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J1.resx">
+      <DependentUpon>J1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J2.resx">
+      <DependentUpon>J2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J3.resx">
+      <DependentUpon>J3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J4.resx">
+      <DependentUpon>J4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\J5.resx">
+      <DependentUpon>J5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K.resx">
+      <DependentUpon>K.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K1.resx">
+      <DependentUpon>K1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K2.resx">
+      <DependentUpon>K2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K3.resx">
+      <DependentUpon>K3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K4.resx">
+      <DependentUpon>K4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K5.resx">
+      <DependentUpon>K5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K6.resx">
+      <DependentUpon>K6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\K7.resx">
+      <DependentUpon>K7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trainings\TrainingMain.resx">
+      <DependentUpon>TrainingMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D.Designer.cs">
+      <DependentUpon>D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D1.Designer.cs">
+      <DependentUpon>D1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D2.Designer.cs">
+      <DependentUpon>D2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D3.Designer.cs">
+      <DependentUpon>D3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D4.Designer.cs">
+      <DependentUpon>D4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\D5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\D5.Designer.cs">
+      <DependentUpon>D5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\F.Designer.cs">
+      <DependentUpon>F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\G.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\G.Designer.cs">
+      <DependentUpon>G.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\G1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\G1.Designer.cs">
+      <DependentUpon>G1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\G2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\G2.Designer.cs">
+      <DependentUpon>G2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\G3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\G3.Designer.cs">
+      <DependentUpon>G3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\H.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\H.Designer.cs">
+      <DependentUpon>H.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\I.Designer.cs">
+      <DependentUpon>I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\I1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\I1.Designer.cs">
+      <DependentUpon>I1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\I2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\I2.Designer.cs">
+      <DependentUpon>I2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\I3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\I3.Designer.cs">
+      <DependentUpon>I3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\I4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\I4.Designer.cs">
+      <DependentUpon>I4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Conversations\I5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Conversations\I5.Designer.cs">
+      <DependentUpon>I5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Informations\C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Informations\C.Designer.cs">
+      <DependentUpon>C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Informations\E.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Informations\E.Designer.cs">
+      <DependentUpon>E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Informations\B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Informations\B.Designer.cs">
+      <DependentUpon>B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Informations\InformationMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Informations\InformationMain.Designer.cs">
+      <DependentUpon>InformationMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shares\LanguageBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Shares\LanguageBoard.Designer.cs">
+      <DependentUpon>LanguageBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Portal.Designer.cs">
+      <DependentUpon>Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J.Designer.cs">
+      <DependentUpon>J.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J1.Designer.cs">
+      <DependentUpon>J1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J2.Designer.cs">
+      <DependentUpon>J2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J3.Designer.cs">
+      <DependentUpon>J3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J4.Designer.cs">
+      <DependentUpon>J4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\J5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\J5.Designer.cs">
+      <DependentUpon>J5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K.Designer.cs">
+      <DependentUpon>K.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K1.Designer.cs">
+      <DependentUpon>K1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K2.Designer.cs">
+      <DependentUpon>K2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K3.Designer.cs">
+      <DependentUpon>K3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K4.Designer.cs">
+      <DependentUpon>K4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K5.Designer.cs">
+      <DependentUpon>K5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K6.Designer.cs">
+      <DependentUpon>K6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\K7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\K7.Designer.cs">
+      <DependentUpon>K7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trainings\TrainingMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trainings\TrainingMain.Designer.cs">
+      <DependentUpon>TrainingMain.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppDB.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\AppDBDataSet.xsc">
+      <DependentUpon>AppDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\AppDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\AppDBDataSet.xss">
+      <DependentUpon>AppDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
